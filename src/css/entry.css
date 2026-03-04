@@ -1,0 +1,39 @@
+@import "tailwindcss";
+@theme {
+  --shadow-primary: 5px 5px black;
+  --color-dimmed: var(--color-gray-600);
+}
+
+:root {
+  font-family: "Geist Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+}
+
+table {
+  border-collapse: collapse;
+  letter-spacing: 1px;
+}
+
+img {
+  border: 1px solid black;
+}
+
+th,
+td {
+  border: 1px solid black;
+}
+
+a {
+  color: var(--color-red-500);
+}
+
+a::after {
+  content: " ★";
+}
