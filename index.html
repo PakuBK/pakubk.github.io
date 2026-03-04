@@ -29,49 +29,11 @@
           <h2 class="tracking-widest">nachrichten</h2>
           <p>✉︎</p>
         </span>
-        <div class="grid grid-cols-1 gap-6 pl-2 pr-3 pt-2">
-          <table class="min-w-[300px] shadow-primary">
-            <thead>
-              <tr>
-                <th align="left" class="px-2 w-[300px]">working...</th>
-                <th align="center" class="text-dimmed text-nowrap bg-slate-200">
-                  3 März, 2026
-                </th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td align="left" colspan="2" class="px-2 py-1">another week</td>
-              </tr>
-            </tbody>
-            <tfoot>
-              <td align="center" colspan="2" class="px-2 bg-slate-200">
-                mood: (╥﹏╥)
-              </td>
-            </tfoot>
-          </table>
-          <table class="max-w-[600px] shadow-primary">
-            <thead>
-              <tr>
-                <th align="left" class="px-2 w-[300px]">create my new space</th>
-                <th align="center" class="text-dimmed text-nowrap bg-slate-200">
-                  2 Oktober, 2025
-                </th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td align="left" colspan="2" class="px-2 py-1">
-                  today i started with the development of my new site
-                </td>
-              </tr>
-            </tbody>
-            <tfoot>
-              <td align="center" colspan="2" class="px-2 bg-slate-200">
-                mood: ୧(▲ᴗ▲)ノ
-              </td>
-            </tfoot>
-          </table>
+        <div
+          id="nachrichten-list"
+          class="grid grid-cols-1 gap-6 pl-2 pr-3 pt-2"
+        >
+          <p>loading nachrichten...</p>
         </div>
       </section>
       <section class="">
@@ -106,7 +68,9 @@
             <div
               class="h-full w-full flex flex-col shadow-primary border border-black"
             >
-              <h4 class="p-2">das grundgesetz - von garam salami</h4>
+              <h4 class="p-2">
+                ist das grundgesetz antifaschistisch? - von garam salami
+              </h4>
               <a
                 class="w-full bg-slate-100 mt-auto border-t border-black text-center"
                 href="https://salamithought.noblogs.org/post/2025/09/29/ist-das-grundgesetz-antifaschistisch/"
@@ -117,5 +81,6 @@
         </div>
       </section>
     </main>
+    <script src="./js/nachrichten.js" defer></script>
   </body>
 </html>
