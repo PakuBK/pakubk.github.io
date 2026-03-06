@@ -1,20 +1,14 @@
-const nachrichtenContainer = document.getElementById("nachrichten-list");
+import { escapeHtml } from "./utility.js";
 
-const escapeHtml = (value) =>
-  String(value)
-    .replaceAll("&", "&amp;")
-    .replaceAll("<", "&lt;")
-    .replaceAll(">", "&gt;")
-    .replaceAll('"', "&quot;")
-    .replaceAll("'", "&#39;");
+export const newsContainer = document.getElementById("nachrichten-list");
 
-const renderNachrichten = (entries) => {
-  if (!nachrichtenContainer) {
+export const renderNews = (entries) => {
+  if (!newsContainer) {
     return;
   }
 
   if (!Array.isArray(entries) || entries.length === 0) {
-    nachrichtenContainer.innerHTML = "<p>noch keine nachrichten da.</p>";
+    newsContainer.innerHTML = "<p>noch keine nachrichten da.</p>";
     return;
   }
 
@@ -26,10 +20,10 @@ const renderNachrichten = (entries) => {
       const mood = escapeHtml(entry.mood ?? "-");
 
       return `
-        <table class="min-w-[300px] shadow-primary">
+        <table class="min-w-[250px] shadow-primary">
           <thead>
             <tr>
-              <th align="left" class="px-2 w-[300px]">${title}</th>
+              <th align="left" class="px-2">${title}</th>
               <th align="center" class="text-dimmed text-nowrap bg-slate-200">${date}</th>
             </tr>
           </thead>
@@ -48,28 +42,41 @@ const renderNachrichten = (entries) => {
     })
     .join("");
 
-  nachrichtenContainer.innerHTML = cards;
+  newsContainer.innerHTML = cards;
 };
 
-const loadNachrichten = async () => {
-  if (!nachrichtenContainer) {
+export const loadNews = async () => {
+  if (!newsContainer) {
     return;
   }
 
   try {
-    const response = await fetch("./nachrichten.json", { cache: "no-store" });
+    let payload;
 
-    if (!response.ok) {
-      throw new Error(`HTTP ${response.status}`);
+    try {
+      const jsonModule = await import(
+        `../content/nachrichten.json?ts=${Date.now()}`,
+        {
+          with: { type: "json" },
+        }
+      );
+      payload = jsonModule.default;
+    } catch {
+      const response = await fetch("../content/nachrichten.json", {
+        cache: "no-store",
+      });
+
+      if (!response.ok) {
+        throw new Error(`HTTP ${response.status}`);
+      }
+
+      payload = await response.json();
     }
 
-    const payload = await response.json();
-    renderNachrichten(payload.nachrichten);
+    renderNews(payload.nachrichten);
   } catch (error) {
-    nachrichtenContainer.innerHTML =
+    newsContainer.innerHTML =
       "<p>nachrichten konnten nicht geladen werden.</p>";
     console.error("Fehler beim Laden von nachrichten.json:", error);
   }
 };
-
-loadNachrichten();
