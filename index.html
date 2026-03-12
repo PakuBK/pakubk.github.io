@@ -1,59 +1,116 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>pakus-web-corner</title>
-    <link href="./css/output.css" rel="stylesheet" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body class="h-screen overflow-hidden flex flex-col">
-    <header class="bg-slate-200">
-      <h1
-        class="text-3xl px-2 py-4 border-b border-black font-bold tracking-widest"
-      >
-        pakus web corner
-      </h1>
-    </header>
-    <main class="flex-1 min-h-0 grid grid-cols-[auto_1fr]">
-      <section class="border-r border-black min-h-0 flex flex-col min-w-75">
-        <span
-          class="text-2xl mb-4 border-b border-black p-3 flex flex-row justify-between shadow-down"
-        >
-          <p>✉︎</p>
-          <h2 class="tracking-widest">nachrichten</h2>
-          <p>✉︎</p>
-        </span>
-        <div
-          id="nachrichten-list"
-          class="grid grid-cols-1 gap-6 pl-2 pr-3 overflow-y-auto min-h-0"
-        >
-          <p>loading nachrichten...</p>
-        </div>
-      </section>
-      <section class="min-h-0 flex flex-col min-w-175">
-        <span
-          class="text-xl mb-4 border-b border-black p-3 flex flex-row justify-between shadow-down"
-        >
-          <p>☭</p>
-          <h2 class="tracking-widest text-2xl">fundkiste</h2>
-          <p>♯</p>
-        </span>
-        <div
-          class="px-3 overflow-y-auto overflow-x-hidden min-h-0"
-          id="post-scroll"
-        >
-          <div id="post-container">
-            <p>loading posts...</p>
-          </div>
-        </div>
-      </section>
-    </main>
-    <script type="module" src="./main.js"></script>
-  </body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>pakus-web-corner</title>
+        <link href="./css/output.css" rel="stylesheet" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body class="h-screen overflow-hidden flex flex-col">
+        <header class="">
+            <h1
+                class="text-3xl px-2 py-4 border-b border-black font-bold tracking-widest"
+            >
+                pakus web corner
+            </h1>
+        </header>
+        <main class="flex-1 min-h-0 grid grid-cols-[auto_1fr]">
+            <div
+                class="border-r border-black min-h-0 flex flex-col h-full max-w-[500px]"
+            >
+                <section class="flex flex-col min-w-75 min-h-0">
+                    <span
+                        class="text-2xl border-b border-black p-3 flex flex-row justify-between bg-slate-100"
+                    >
+                        <p id="spinner-l">◓</p>
+                        <h2 class="tracking-widest">neues</h2>
+                        <p>✉︎</p>
+                    </span>
+                    <div
+                        id="nachrichten-list"
+                        class="grid grid-cols-1 gap-6 pl-2 pr-3 overflow-y-auto overflow-x-hidden min-h-0 py-4"
+                    >
+                        <p>loading nachrichten...</p>
+                    </div>
+                </section>
+                <section class="flex flex-col min-w-75 grow">
+                    <span
+                        class="text-2xl border-y border-black p-3 flex flex-row justify-between bg-slate-100"
+                    >
+                        <p>∏</p>
+                        <h2 class="tracking-widest">aether portal</h2>
+                        <p>🂡</p>
+                    </span>
+                    <div
+                        id="link-list"
+                        class="flex flex-col gap-4 pl-2 pr-3 overflow-y-auto py-4 min-h-0"
+                    >
+                        <div class="group">
+                            <button
+                                class="group-hover:bg-slate-300 group-hover:scale-y-120 duration-600 transition-all border border-black py-2 flex w-full justify-center shadow-primary"
+                            >
+                                <a
+                                    href="https://github.com/PakuBK"
+                                    target="_blank"
+                                    >github</a
+                                >
+                            </button>
+                        </div>
+                        <div class="group">
+                            <button
+                                class="group-hover:bg-slate-300 group-hover:scale-y-120 duration-600 transition-all border border-black py-2 w-full justify-center flex shadow-primary"
+                            >
+                                <a
+                                    href="https://www.instagram.com/paku.io/"
+                                    target="_blank"
+                                    >instagram</a
+                                >
+                            </button>
+                        </div>
+                        <div class="group">
+                            <button
+                                class="group-hover:bg-slate-300 group-hover:scale-y-120 duration-600 transition-all border border-black py-2 w-full justify-center flex shadow-primary"
+                            >
+                                <a href="./pages/kontakt.html">kontakt</a>
+                            </button>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <section class="min-h-0 flex flex-col min-w-175">
+                <span
+                    class="text-xl border-b border-black p-3 flex flex-row justify-between bg-slate-100"
+                >
+                    <p>☭</p>
+                    <h2 class="tracking-widest text-2xl">fundkiste</h2>
+                    <p>♯</p>
+                </span>
+                <div
+                    class="px-3 overflow-y-auto overflow-x-hidden min-h-0 pt-2"
+                    id="post-scroll"
+                >
+                    <div id="post-container">
+                        <p>loading posts...</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <script type="module" src="./main.js"></script>
+        <script>
+            const target = document.getElementById("spinner-l");
+            const cycle = ["◐", "◓", "◑", "◒"];
+            let curCycleStep = 0;
+            setInterval(() => {
+                let sign = cycle[curCycleStep];
+                target.innerHTML = sign;
+                curCycleStep = (curCycleStep + 1) % cycle.length;
+            }, 300);
+        </script>
+    </body>
 </html>

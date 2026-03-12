@@ -1,47 +1,30 @@
 {
-  "posts": [
-    {
-      "title": "pixel lab",
-      "content": "pixelart und anderes von mir.",
-      "img_url": "./imgs/777.png",
-      "url": "./pages/art.html"
-    },
-    {
-      "title": "reading list",
-      "content": "kleine sammlung von texten, links und notizen fur den monat.",
-      "url": "./pages/art.html"
-    },
-    {
-      "title": "zine board",
-      "content": "scan dump: flyer, cover drafts, collage assets, plus two unfinished pages from the mini-zine.",
-      "img_url": "./imgs/777.png",
-      "url": "./pages/art.html"
-    },
-    {
-      "title": "dev crumbs",
-      "content": "utility snippets, module notes, and tiny experiments that may become full features later.",
-      "url": "./pages/art.html"
-    },
-    {
-      "title": "photo strip",
-      "content": "street snapshots from this week.",
-      "img_url": "./imgs/777.png",
-      "url": "./pages/art.html"
-    },
-    {
-      "title": "audio corner",
-      "content": "playlist update: noisy, dreamy, and one very calm ambient track for late-night coding.",
-      "url": "./pages/art.html"
-    },
-    {
-      "title": "project notes",
-      "content": "masonry test card with a longer block of text so the column flow is obvious. if this wraps more than the others, you should see staggered bottoms and less rigid rows than the classic grid layout.",
-      "url": "./pages/art.html"
-    },
-    {
-      "title": "tiny update",
-      "content": "small post.",
-      "url": "./pages/art.html"
-    }
-  ]
+    "posts": [
+        {
+            "title": "pixel zeug",
+            "content": "pixelart und ähnliches von mir.",
+            "img_url": "./imgs/777.png",
+            "url": "./pages/art.html"
+        },
+        {
+            "title": "projekt showcase ",
+            "content": "fertige, halb fertige und traum projekte aller art.",
+            "url": "./pages/projects.html"
+        },
+        {
+            "title": "artikel des monats",
+            "content": "afd verbieten oder lieber nicht? von garam salami",
+            "url": "https://salamithought.noblogs.org/post/2026/03/07/afd-verbieten-oder-lieber-nicht/#more-116"
+        },
+        {
+            "title": "track der woche",
+            "content": "111 Bpm aufm Tacho - redd",
+            "url": "https://open.spotify.com/track/54oTKX70iwHqWxxnScxVvk?si=27dfc1e5651949a5"
+        },
+        {
+            "title": "tiny update",
+            "content": "small post.",
+            "url": "./pages/art.html"
+        }
+    ]
 }
