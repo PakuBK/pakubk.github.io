@@ -1,4 +1,13 @@
 {
-    "track": null,
-    "updated_at": null
+    "track": {
+        "title": "Fick Dich",
+        "artists": [
+            "Leftovers"
+        ],
+        "album": "Müde",
+        "image": "https://i.scdn.co/image/ab67616d00001e02bae0a8c567af4ee4fc79ae00",
+        "url": "https://open.spotify.com/track/6gnvpBB7FlHbS4jLfyExSM",
+        "played_at": "2026-06-12T16:20:55.169Z"
+    },
+    "updated_at": "2026-06-12T17:50:34.999Z"
 }
