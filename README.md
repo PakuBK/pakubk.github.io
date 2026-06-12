@@ -10,6 +10,7 @@ the form, and tap the green **Run workflow** button:
 - [Add a status update](https://github.com/PakuBK/pakubk.github.io/actions/workflows/add-status.yml)
 - [Update the song of the week](https://github.com/PakuBK/pakubk.github.io/actions/workflows/update-weekly-song.yml)
 - [Post artwork](https://github.com/PakuBK/pakubk.github.io/issues/new?template=post-artwork.yml)
+- [Post lyrical artwork](https://github.com/PakuBK/pakubk.github.io/issues/new?template=post-lyrik.yml)
 
 Bookmark these links on your phone. A successful run updates the JSON in
 `content/`, commits the change to `main`, and deploys the new version of the
@@ -48,3 +49,10 @@ From a phone, use the **Post artwork** issue form linked above. Choose an image
 and submit the issue. For safety, publishing only runs for issues opened by the
 repository owner with the `[art]` title prefix. The workflow verifies the
 attachment, adds it to the gallery, deploys the site, and closes the issue.
+
+## Add lyrical work
+
+The lyrical archive is stored in `content/lyrik.json` and displayed on
+`pages/lyrik.html`. From a phone, use the **Post lyrical artwork** form linked
+above. Its multiline editor preserves line breaks. The owner-only workflow
+adds the work with a Berlin-local date, deploys the site, and closes the issue.

@@ -1,0 +1,20 @@
+name: Post lyrical artwork
+description: Publish a poem or other text-based lyrical artwork.
+title: "[lyrik] "
+body:
+  - type: input
+    id: work-title
+    attributes:
+      label: Title
+      description: The title shown in the lyrical archive.
+      placeholder: Example: zwischen den stationen
+    validations:
+      required: true
+  - type: textarea
+    id: work-text
+    attributes:
+      label: Text
+      description: Line breaks and empty lines will be preserved.
+      placeholder: Write or paste your text here.
+    validations:
+      required: true
