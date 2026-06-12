@@ -1,6 +1,12 @@
 {
     "nachrichten": [
         {
+            "title": "first remote update!",
+            "date": "12 Juni, 2026",
+            "text": "i hope this works!",
+            "mood": "happy :)"
+        },
+        {
             "title": "working...",
             "date": "3 März, 2026",
             "text": "another week",
