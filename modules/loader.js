@@ -1,44 +1,32 @@
-const IMAGE_EXTENSIONS = /\.(avif|bmp|gif|jpe?g|png|svg|webp)$/i;
-
-export const loadImages = async (folderPath) => {
-    const normalizedPath = String(folderPath || "").replace(/\/+$/, "");
-
-    if (!normalizedPath) {
-        throw new Error("loadImages requires a folder path.");
+export const loadImages = async (imagePaths) => {
+    if (!Array.isArray(imagePaths)) {
+        throw new Error("loadImages requires an array of image paths.");
     }
 
-    const directoryResponse = await fetch(`${normalizedPath}/`);
-
-    if (!directoryResponse.ok) {
-        throw new Error(
-            `Could not read directory listing at ${normalizedPath} (HTTP ${directoryResponse.status}).`,
-        );
-    }
-
-    const html = await directoryResponse.text();
-    const parser = new DOMParser();
-    const doc = parser.parseFromString(html, "text/html");
-
-    const imageUrls = [...doc.querySelectorAll("a[href]")]
-        .map((anchor) => anchor.getAttribute("href") || "")
-        .filter((href) => IMAGE_EXTENSIONS.test(href))
-        .map(
-            (href) =>
-                new URL(href, `${window.location.origin}${normalizedPath}/`)
-                    .href,
-        );
-
-    const imageLoadPromises = imageUrls.map(
+    const imageLoadPromises = imagePaths.map(
         (src) =>
             new Promise((resolve, reject) => {
                 const img = new Image();
                 img.decoding = "async";
-                img.src = src;
+                img.src = new URL(src, document.baseURI).href;
                 img.onload = () => resolve(img);
                 img.onerror = () =>
-                    reject(new Error(`Failed to load image: ${src}`));
+                    reject(new Error(`Failed to load image: ${img.src}`));
             }),
     );
 
-    return Promise.all(imageLoadPromises);
+    const results = await Promise.allSettled(imageLoadPromises);
+    const loadedImages = results
+        .filter((result) => result.status === "fulfilled")
+        .map((result) => result.value);
+
+    results
+        .filter((result) => result.status === "rejected")
+        .forEach((result) => console.error(result.reason));
+
+    if (imagePaths.length > 0 && loadedImages.length === 0) {
+        throw new Error("None of the configured art images could be loaded.");
+    }
+
+    return loadedImages;
 };

@@ -36,3 +36,9 @@ Run the content updater tests with:
 ```powershell
 npm test
 ```
+
+## Add art
+
+Put the image in `imgs/`, then add its relative path to the `images` array in
+`content/art.json`. The explicit list is required because GitHub Pages does not
+provide directory listings for JavaScript to discover image files.

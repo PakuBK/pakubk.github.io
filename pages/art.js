@@ -1,6 +1,6 @@
 import { loadImages } from "../modules/loader.js";
 
-const ART_IMAGE_FOLDER = "/imgs";
+const ART_MANIFEST_URL = "../content/art.json";
 
 const renderArt = async () => {
     const artContainer = document.getElementById("art-container");
@@ -10,7 +10,18 @@ const renderArt = async () => {
     }
 
     try {
-        const loadedImages = await loadImages(ART_IMAGE_FOLDER);
+        const response = await fetch(ART_MANIFEST_URL, {
+            cache: "no-store",
+        });
+
+        if (!response.ok) {
+            throw new Error(
+                `Could not load art manifest (HTTP ${response.status}).`,
+            );
+        }
+
+        const payload = await response.json();
+        const loadedImages = await loadImages(payload.images);
 
         artContainer.innerHTML = "";
 
