@@ -4,6 +4,13 @@ on:
   issues:
     types:
       - opened
+      - edited
+  workflow_dispatch:
+    inputs:
+      issue_number:
+        description: Existing issue number to publish
+        required: true
+        type: string
 
 permissions: {}
 
@@ -16,7 +23,13 @@ jobs:
   publish:
     if: >-
       github.actor == github.repository_owner &&
-      startsWith(github.event.issue.title, '[lyrik] ')
+      (
+        github.event_name == 'workflow_dispatch' ||
+        contains(
+          github.event.issue.body,
+          'Publish this issue as a lyrical artwork.'
+        )
+      )
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -29,27 +42,47 @@ jobs:
         with:
           ref: main
 
+      - name: Read issue
+        env:
+          GH_TOKEN: ${{ github.token }}
+          EVENT_NAME: ${{ github.event_name }}
+          EVENT_ISSUE_NUMBER: ${{ github.event.issue.number }}
+          INPUT_ISSUE_NUMBER: ${{ inputs.issue_number }}
+        run: |
+          if [ "$EVENT_NAME" = "workflow_dispatch" ]; then
+            issue_number="$INPUT_ISSUE_NUMBER"
+          else
+            issue_number="$EVENT_ISSUE_NUMBER"
+          fi
+          if ! [[ "$issue_number" =~ ^[0-9]+$ ]]; then
+            echo "Issue number must be numeric." >&2
+            exit 1
+          fi
+          gh api "repos/${{ github.repository }}/issues/$issue_number" > issue.json
+
       - name: Add lyrical artwork
         env:
-          ISSUE_BODY: ${{ github.event.issue.body }}
+          ISSUE_FILE: issue.json
         run: node scripts/publish-lyrik.js
 
       - name: Commit and push
         id: commit
         run: |
+          issue_number=$(node -p "require('./issue.json').number")
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add content/lyrik.json
-          git commit -m "Post lyrical artwork from issue #${{ github.event.issue.number }}"
+          git commit -m "Post lyrical artwork from issue #$issue_number"
           git push origin HEAD:main
           echo "commit_sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
 
       - name: Close publishing issue
         env:
           GH_TOKEN: ${{ github.token }}
-        run: >-
-          gh issue close "${{ github.event.issue.number }}"
-          --comment "Lyrical artwork published. The site deployment has started."
+        run: |
+          issue_number=$(node -p "require('./issue.json').number")
+          gh issue close "$issue_number" \
+            --comment "Lyrical artwork published. The site deployment has started."
 
   deploy:
     needs: publish

@@ -54,5 +54,8 @@ attachment, adds it to the gallery, deploys the site, and closes the issue.
 
 The lyrical archive is stored in `content/lyrik.json` and displayed on
 `pages/lyrik.html`. From a phone, use the **Post lyrical artwork** form linked
-above. Its multiline editor preserves line breaks. The owner-only workflow
-adds the work with a Berlin-local date, deploys the site, and closes the issue.
+above. Use the GitHub issue title as the artwork title; its multiline editor
+preserves line breaks. The owner-only workflow adds the work with a
+Berlin-local date, deploys the site, and closes the issue. To recover an
+existing open publishing issue, manually run the **Post lyrical artwork**
+workflow and enter its issue number.

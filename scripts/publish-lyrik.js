@@ -12,7 +12,13 @@ function lyricalText(issueBody) {
     const match = String(issueBody ?? "").match(
         /(?:^|\n)### Text\s*\n+([\s\S]*)$/,
     );
-    const text = match?.[1].trim();
+    const source = match?.[1] ?? String(issueBody ?? "");
+    const text = source
+        .replace(
+            /\n*### Publish\s*\n+(?:- \[[xX ]\] )?Publish this issue as a lyrical artwork\.\s*$/,
+            "",
+        )
+        .trim();
 
     if (!text || text === "_No response_") {
         throw new Error('Issue field "Text" is required.');
@@ -21,8 +27,28 @@ function lyricalText(issueBody) {
     return text.replace(/\r\n/g, "\n");
 }
 
-function publishLyricalWork(filePath, issueBody, now = new Date()) {
-    const title = issueField(issueBody, "Title");
+function lyricalTitle(issueTitle, issueBody) {
+    const structuredTitle = String(issueBody ?? "").includes("### Title")
+        ? issueField(issueBody, "Title")
+        : "";
+    const title = (structuredTitle || String(issueTitle ?? ""))
+        .replace(/^\[lyrik\]\s*/i, "")
+        .trim();
+
+    if (!title) {
+        throw new Error("Issue title is required.");
+    }
+
+    return title;
+}
+
+function publishLyricalWork(
+    filePath,
+    issue,
+    now = new Date(),
+) {
+    const title = lyricalTitle(issue.title, issue.body);
+    const issueBody = issue.body;
     const text = lyricalText(issueBody);
 
     if (title.length > 200) {
@@ -56,9 +82,15 @@ function publishLyricalWork(filePath, issueBody, now = new Date()) {
 }
 
 function runCli() {
+    const issue = process.env.ISSUE_FILE
+        ? JSON.parse(fs.readFileSync(process.env.ISSUE_FILE, "utf8"))
+        : {
+              title: process.env.ISSUE_TITLE,
+              body: process.env.ISSUE_BODY,
+          };
     const work = publishLyricalWork(
         LYRIK_FILE,
-        process.env.ISSUE_BODY,
+        issue,
     );
     console.log(`Published lyrical work: ${work.title}`);
 }
@@ -74,5 +106,6 @@ if (require.main === module) {
 
 module.exports = {
     lyricalText,
+    lyricalTitle,
     publishLyricalWork,
 };
