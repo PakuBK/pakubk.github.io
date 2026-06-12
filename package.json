@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "node --test",
-    "dev": "python -m http.server 5500"
+    "dev": "python -m http.server 5500",
+    "spotify:authorize": "node scripts/spotify-authorize.js",
+    "spotify:sync": "node scripts/update-spotify.js"
   },
   "keywords": [],
   "author": "",

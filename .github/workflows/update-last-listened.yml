@@ -1,0 +1,42 @@
+name: Update last listened Spotify track
+
+on:
+  schedule:
+    - cron: "*/10 * * * *"
+  workflow_dispatch:
+
+permissions: {}
+
+concurrency:
+  group: mobile-content-publishing
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Check out latest content
+        uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Fetch last listened track
+        env:
+          SPOTIFY_CLIENT_ID: ${{ secrets.SPOTIFY_CLIENT_ID }}
+          SPOTIFY_CLIENT_SECRET: ${{ secrets.SPOTIFY_CLIENT_SECRET }}
+          SPOTIFY_REFRESH_TOKEN: ${{ secrets.SPOTIFY_REFRESH_TOKEN }}
+        run: node scripts/update-spotify.js
+
+      - name: Commit and push changed track
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add content/spotify.json
+          if git diff --cached --quiet; then
+            echo "Last listened track is unchanged."
+          else
+            git commit -m "Update last listened Spotify track"
+            git push origin HEAD:main
+          fi

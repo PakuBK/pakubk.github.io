@@ -47,6 +47,38 @@ Run the content updater tests with:
 npm test
 ```
 
+## Last listened Spotify track
+
+The homepage reads public track metadata from `content/spotify.json`. A
+scheduled GitHub Actions workflow updates that file every ten minutes and only
+commits when the last played track changes. Spotify credentials remain in
+GitHub Actions secrets and are never sent to the browser.
+
+In the Spotify developer dashboard, add this exact Redirect URI:
+
+```text
+http://127.0.0.1:8888/callback
+```
+
+Generate a refresh token locally in PowerShell:
+
+```powershell
+$env:SPOTIFY_CLIENT_ID="your client id"
+$env:SPOTIFY_CLIENT_SECRET="your client secret"
+npm run spotify:authorize
+```
+
+Authorize the `user-read-recently-played` permission. The terminal prints a
+refresh token. Add these repository secrets under **Settings > Secrets and
+variables > Actions**:
+
+- `SPOTIFY_CLIENT_ID`
+- `SPOTIFY_CLIENT_SECRET`
+- `SPOTIFY_REFRESH_TOKEN`
+
+Run **Update last listened Spotify track** once from the Actions tab to verify
+the setup. Never commit any of these three values.
+
 ## Add art
 
 Put the image in `imgs/`, then add its relative path to the `images` array in
