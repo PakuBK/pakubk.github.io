@@ -1,0 +1,20 @@
+name: Post artwork
+description: Upload an image and publish it to the art gallery.
+title: "[art] "
+body:
+  - type: input
+    id: artwork-name
+    attributes:
+      label: Artwork name
+      description: Used to create a readable image filename.
+      placeholder: Example: night train
+    validations:
+      required: true
+  - type: upload
+    id: artwork-file
+    attributes:
+      label: Artwork file
+      description: Upload one PNG, JPEG, GIF, or WebP image (maximum 10 MB).
+    validations:
+      required: true
+      accept: ".png,.jpg,.jpeg,.gif,.webp"

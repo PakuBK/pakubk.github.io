@@ -1,0 +1,63 @@
+name: Post artwork
+
+on:
+  issues:
+    types:
+      - opened
+
+permissions: {}
+
+concurrency:
+  group: mobile-content-publishing
+  cancel-in-progress: false
+  queue: max
+
+jobs:
+  publish:
+    if: >-
+      github.actor == github.repository_owner &&
+      startsWith(github.event.issue.title, '[art] ')
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      issues: write
+    outputs:
+      commit_sha: ${{ steps.commit.outputs.commit_sha }}
+    steps:
+      - name: Check out latest content
+        uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Download and add artwork
+        env:
+          ISSUE_BODY: ${{ github.event.issue.body }}
+          ISSUE_NUMBER: ${{ github.event.issue.number }}
+        run: node scripts/publish-art.js
+
+      - name: Commit and push
+        id: commit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add imgs content/art.json
+          git commit -m "Post artwork from issue #${{ github.event.issue.number }}"
+          git push origin HEAD:main
+          echo "commit_sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
+
+      - name: Close publishing issue
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: >-
+          gh issue close "${{ github.event.issue.number }}"
+          --comment "Artwork published. The site deployment has started."
+
+  deploy:
+    needs: publish
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    uses: ./.github/workflows/deploy-pages.yml
+    with:
+      ref: ${{ needs.publish.outputs.commit_sha }}
