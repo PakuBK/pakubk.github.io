@@ -1,0 +1,68 @@
+name: Update song of the week
+
+on:
+  workflow_dispatch:
+    inputs:
+      song:
+        description: Song title
+        required: true
+        type: string
+      artist:
+        description: Artist
+        required: true
+        type: string
+      url:
+        description: HTTPS link to the song
+        required: true
+        type: string
+
+permissions: {}
+
+concurrency:
+  group: mobile-content-publishing
+  cancel-in-progress: false
+  queue: max
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    outputs:
+      commit_sha: ${{ steps.commit.outputs.commit_sha }}
+    steps:
+      - name: Check out latest content
+        uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Update weekly song
+        env:
+          SONG_TITLE: ${{ inputs.song }}
+          SONG_ARTIST: ${{ inputs.artist }}
+          SONG_URL: ${{ inputs.url }}
+        run: node scripts/update-content.js update-weekly-song
+
+      - name: Commit and push
+        id: commit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add content/posts.json
+          if git diff --cached --quiet; then
+            echo "No song change to commit."
+          else
+            git commit -m "Update song of the week"
+            git push origin HEAD:main
+          fi
+          echo "commit_sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
+
+  deploy:
+    needs: update
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    uses: ./.github/workflows/deploy-pages.yml
+    with:
+      ref: ${{ needs.update.outputs.commit_sha }}

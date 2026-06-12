@@ -1,0 +1,64 @@
+name: Add status update
+
+on:
+  workflow_dispatch:
+    inputs:
+      title:
+        description: Status title
+        required: true
+        type: string
+      text:
+        description: Status text
+        required: true
+        type: string
+      mood:
+        description: Mood (optional)
+        required: false
+        type: string
+
+permissions: {}
+
+concurrency:
+  group: mobile-content-publishing
+  cancel-in-progress: false
+  queue: max
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    outputs:
+      commit_sha: ${{ steps.commit.outputs.commit_sha }}
+    steps:
+      - name: Check out latest content
+        uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Add status
+        env:
+          STATUS_TITLE: ${{ inputs.title }}
+          STATUS_TEXT: ${{ inputs.text }}
+          STATUS_MOOD: ${{ inputs.mood }}
+        run: node scripts/update-content.js add-status
+
+      - name: Commit and push
+        id: commit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add content/nachrichten.json
+          git commit -m "Add status update"
+          git push origin HEAD:main
+          echo "commit_sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
+
+  deploy:
+    needs: update
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    uses: ./.github/workflows/deploy-pages.yml
+    with:
+      ref: ${{ needs.update.outputs.commit_sha }}
