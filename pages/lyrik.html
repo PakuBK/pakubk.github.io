@@ -3,81 +3,42 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>pakus-web-corner / lyrik</title>
-        <link href="../css/output.css" rel="stylesheet" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&display=swap"
-            rel="stylesheet"
-        />
+        <title>pakus web corner / lyrik</title>
     </head>
-    <body class="h-screen overflow-hidden flex flex-col">
-        <header>
-            <h1
-                class="text-3xl px-2 py-4 border-b border-black font-bold tracking-widest"
-            >
-                pakus web corner / lyrik
-            </h1>
+    <body>
+        <header id="site-header">
+            <h1>pakus web corner / lyrik</h1>
         </header>
-        <nav
-            class="border-b border-black flex flex-row *:text-2xl bg-slate-200 w-full"
-        >
-            <a
-                class="p-4 border-r border-black bg-slate-300"
-                href="./art.html"
-            >
-                pixelart
-            </a>
-            <a
-                class="p-4 border-r border-black bg-slate-100"
-                href="./lyrik.html"
-                aria-current="page"
-            >
-                lyrik
-            </a>
-            <a
-                href=".."
-                class="p-4 ml-auto border-l border-black bg-slate-300"
-            >
-                zurück
-            </a>
+
+        <nav id="site-navigation" aria-label="hauptnavigation">
+            <a href="./art.html">pixelart</a>
+            <a href="./lyrik.html" aria-current="page">lyrik</a>
+            <a href="..">zurück</a>
         </nav>
-        <main
-            class="flex-1 min-h-0 grid grid-cols-[minmax(250px,360px)_1fr]"
-        >
-            <aside class="border-r border-black min-h-0 flex flex-col">
-                <span
-                    class="text-2xl border-b border-black p-3 flex flex-row justify-between bg-slate-100"
-                >
-                    <p>≋</p>
-                    <h2 class="tracking-widest">texte</h2>
-                    <p>✎</p>
-                </span>
-                <div
-                    id="lyrik-list"
-                    class="flex flex-col gap-4 p-3 overflow-y-auto min-h-0"
-                >
+
+        <main id="lyrik-content">
+            <aside id="lyrik-index" aria-labelledby="lyrik-index-heading">
+                <header>
+                    <h2 id="lyrik-index-heading">texte</h2>
+                </header>
+                <div id="lyrik-list">
                     <p>loading texte...</p>
                 </div>
             </aside>
-            <section class="min-h-0 flex flex-col">
-                <span
-                    class="text-2xl border-b border-black p-3 flex flex-row justify-between bg-slate-100"
-                >
-                    <p>⌜</p>
-                    <h2 id="lyrik-heading" class="tracking-widest">leseraum</h2>
-                    <p>⌟</p>
-                </span>
-                <article
-                    id="lyrik-reader"
-                    class="min-h-0 overflow-y-auto p-6"
-                    aria-live="polite"
-                >
+
+            <section id="lyrik-room" aria-labelledby="lyrik-heading">
+                <header>
+                    <h2 id="lyrik-heading">leseraum</h2>
+                </header>
+                <button id="lyrik-back" type="button">
+                    zurück zu texte
+                </button>
+                <article id="lyrik-reader" aria-live="polite">
                     <p>wähle einen text aus.</p>
                 </article>
             </section>
         </main>
+
         <script type="module" src="./lyrik.js"></script>
     </body>
 </html>

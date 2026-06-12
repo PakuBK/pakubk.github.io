@@ -21,20 +21,19 @@ export const renderPosts = (entries) => {
                 typeof entry.img_url === "string" &&
                 entry.img_url.trim() !== "";
             const imgMarkup = hasImage
-                ? `<img width="100" height="100" src="${escapeHtml(entry.img_url)}" alt="${title}" class="m-2" />`
+                ? `<img src="${escapeHtml(entry.img_url)}" alt="${title}" loading="lazy" />`
                 : "";
 
             return `
-        <article class="post-card shadow-primary border border-black bg-slate-100/50">
-          <h4 class="p-2 text-xl">${title}</h4>
+        <article>
+          <header>
+            <h3>${title}</h3>
+          </header>
           ${imgMarkup}
-          <p class="px-2 pb-2">${content}</p>
-          <a
-            class="post-card-link bg-slate-200 border-t border-black text-center"
-            href="${url}"
-          >
-            link
-          </a>
+          <p>${content}</p>
+          <footer>
+            <a href="${url}">link</a>
+          </footer>
         </article>
       `;
         })

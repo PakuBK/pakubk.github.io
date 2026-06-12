@@ -30,14 +30,12 @@ const renderArt = async () => {
             img.src = loadedImage.src;
             img.alt = `art-${index + 1}`;
             img.loading = "lazy";
-            img.className =
-                "max-w-50 max-h-50 object-cover border border-black bg-red-500";
             artContainer.append(img);
         });
     } catch (error) {
         console.error(error);
         artContainer.innerHTML =
-            '<p class="p-4 text-red-700">Could not load art images.</p>';
+            "<p>Could not load art images.</p>";
     }
 };
 

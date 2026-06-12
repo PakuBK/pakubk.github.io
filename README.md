@@ -33,6 +33,14 @@ deployment workflow.
 npm run dev
 ```
 
+The HTML intentionally contains no stylesheet or CSS classes. Page structure,
+IDs, `data-*` attributes, and ARIA attributes provide stable hooks for a new
+styling layer without coupling JavaScript behavior to presentation.
+
+Primary page hooks are `#site-header`, `#site-navigation`, `#home-content`,
+`#lyrik-content`, `#art-content`, and `#contact-content`. JavaScript behavior
+uses `data-home-panel`, `data-panel-toggle`, and the existing content IDs.
+
 Run the content updater tests with:
 
 ```powershell

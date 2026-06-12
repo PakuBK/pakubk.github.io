@@ -20,24 +20,16 @@ export const renderNews = (entries) => {
       const mood = escapeHtml(entry.mood ?? "-");
 
       return `
-        <table class="min-w-[250px] shadow-primary">
-          <thead>
-            <tr>
-              <th align="left" class="px-2">${title}</th>
-              <th align="center" class="text-dimmed text-nowrap bg-slate-200">${date}</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td align="left" colspan="2" class="px-2 py-1">${text}</td>
-            </tr>
-          </tbody>
-          <tfoot>
-            <tr>
-              <td align="center" colspan="2" class="px-2 bg-slate-200">mood: ${mood}</td>
-            </tr>
-          </tfoot>
-        </table>
+        <article>
+          <header>
+            <h3>${title}</h3>
+            <time>${date}</time>
+          </header>
+          <p>${text}</p>
+          <footer>
+            <p>mood: ${mood}</p>
+          </footer>
+        </article>
       `;
     })
     .join("");
