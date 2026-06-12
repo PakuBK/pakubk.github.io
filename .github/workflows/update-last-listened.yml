@@ -2,7 +2,8 @@ name: Update last listened Spotify track
 
 on:
   schedule:
-    - cron: "*/10 * * * *"
+    # Offset from minute zero to reduce GitHub's peak-hour scheduling delays.
+    - cron: "3/10 * * * *"
   workflow_dispatch:
 
 permissions: {}

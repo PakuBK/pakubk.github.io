@@ -1,27 +1,28 @@
-html {
+:root {
+    color-scheme: light;
     font-family: "Geist Mono", monospace;
+    font-size: 16px;
+    line-height: 1.55;
+    --ink: #171717;
+    --paper: #f7f5ef;
+    --panel: #fffdf7;
+    --muted: #666159;
+    --accent: #6741d9;
+    --accent-soft: #ece7ff;
 }
 
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-family: "Geist Mono", monospace;
-    margin: 0;
+* {
+    box-sizing: border-box;
+}
+
+html {
+    background: var(--paper);
+    color: var(--ink);
 }
 
 body {
     margin: 0;
-    padding: 0;
-}
-
-main {
-    margin: 0 1rem 0 1rem;
-}
-
-h1 {
-    text-align: center;
+    min-width: 0;
 }
 
 button,
@@ -31,13 +32,106 @@ select {
     font: inherit;
 }
 
-#nachrichten-list {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
+button,
+a {
+    -webkit-tap-highlight-color: transparent;
 }
 
-#post-container {
+a {
+    color: var(--accent);
+    text-underline-offset: 0.2em;
+}
+
+a:focus-visible,
+button:focus-visible {
+    outline: 3px solid var(--accent);
+    outline-offset: 3px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin-top: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Geist Mono", monospace;
+    line-height: 1.2;
+}
+
+#site-header {
+    padding: 1.5rem 1rem 0.75rem;
+}
+
+h1 {
+    margin-bottom: 0;
+    font-size: clamp(1.45rem, 7vw, 2.25rem);
+    text-align: center;
+}
+
+main,
+#site-navigation {
+    width: min(100% - 2rem, 48rem);
+    margin-inline: auto;
+}
+
+#site-navigation {
+    display: flex;
+    gap: 0.75rem;
+    justify-content: center;
+    padding: 0.5rem 0 1.5rem;
+    overflow-x: auto;
+}
+
+#site-navigation a,
+.section-link,
+#news-load-more,
+#lyrik-back {
+    display: inline-flex;
+    min-height: 2.75rem;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--ink);
+    border-radius: 0.35rem;
+    background: var(--panel);
+    color: var(--ink);
+    padding: 0.65rem 0.9rem;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#site-navigation a[aria-current="page"],
+.section-link {
+    background: var(--accent-soft);
+}
+
+section,
+aside {
+    margin-bottom: 2rem;
+}
+
+section > header,
+aside > header {
+    margin-bottom: 0.8rem;
+}
+
+section > header h2,
+aside > header h2 {
+    font-size: 1.25rem;
+}
+
+#nachrichten-list,
+#post-container,
+#lyrik-list {
     display: flex;
     flex-direction: column;
     gap: 1rem;
@@ -45,42 +139,205 @@ select {
 
 #link-list ul {
     display: flex;
-    flex-direction: row;
-    gap: 2rem;
     flex-wrap: wrap;
-}
-
-section {
-    margin-bottom: 2rem;
+    gap: 0.65rem 1.25rem;
+    margin: 0;
+    padding-left: 1.2rem;
 }
 
 article {
     display: flex;
-    flex-direction: column;
-    border: black solid 1px;
     width: 100%;
-    margin-left: auto;
-    margin-right: auto;
+    min-width: 0;
+    flex-direction: column;
+    border: 1px solid var(--ink);
+    border-radius: 0.35rem;
+    background: var(--panel);
+    overflow: hidden;
 }
 
 article header {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: black solid 1px;
-    padding: 0.5rem;
+    gap: 0.6rem;
+    flex-direction: column;
+    border-bottom: 1px solid var(--ink);
+    padding: 0.75rem;
 }
 
-article > p {
-    padding: 0.5rem;
+article header h3,
+article header p {
+    margin-bottom: 0;
+}
+
+article header time {
+    color: var(--muted);
+    font-size: 0.8rem;
+}
+
+article > p,
+article > pre {
+    margin: 0;
+    padding: 0.8rem;
+}
+
+article > img {
+    display: block;
+    width: 100%;
+    max-height: 24rem;
+    object-fit: cover;
+    border-bottom: 1px solid var(--ink);
 }
 
 article footer {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    min-height: 2.75rem;
     align-items: center;
-    border-top: black solid 1px;
-    padding-left: 0.5rem;
+    justify-content: space-between;
+    border-top: 1px solid var(--ink);
+    padding: 0.65rem 0.75rem;
+}
+
+article footer p {
+    margin: 0;
+}
+
+#spotify-widget article {
+    display: grid;
+    grid-template-columns: 5.5rem minmax(0, 1fr);
+}
+
+#spotify-widget article > img {
+    width: 5.5rem;
+    height: 100%;
+    min-height: 5.5rem;
+    grid-row: 1 / 3;
+    object-fit: cover;
+    border-right: 1px solid var(--ink);
+    border-bottom: 0;
+}
+
+#spotify-widget article > header {
+    min-width: 0;
+}
+
+#spotify-widget article > header h3,
+#spotify-widget article > header a {
+    overflow-wrap: anywhere;
+}
+
+#spotify-widget article > p,
+#spotify-widget article > footer {
+    grid-column: 1 / -1;
+}
+
+#lyrik-section {
+    border: 1px solid var(--ink);
+    border-radius: 0.35rem;
+    background: var(--panel);
+    padding: 1rem;
+}
+
+#lyrik-section p {
+    margin-bottom: 1rem;
+}
+
+#news-load-more {
+    width: 100%;
+    background: var(--accent-soft);
+}
+
+#lyrik-content {
+    padding-bottom: 2rem;
+}
+
+#art-content {
+    padding-bottom: 2rem;
+}
+
+#art-container {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 1rem;
+}
+
+#art-container > img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border: 1px solid var(--ink);
+    border-radius: 0.35rem;
+    background: var(--panel);
+    object-fit: contain;
+}
+
+#lyrik-list button {
+    display: flex;
+    width: 100%;
+    min-height: 3.5rem;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    border: 1px solid var(--ink);
+    border-radius: 0.35rem;
+    background: var(--panel);
+    color: var(--ink);
+    padding: 0.8rem;
+    text-align: left;
+    cursor: pointer;
+}
+
+#lyrik-list button[aria-current="true"] {
+    background: var(--accent-soft);
+}
+
+#lyrik-list time {
+    flex: 0 0 auto;
+    color: var(--muted);
+    font-size: 0.75rem;
+}
+
+#lyrik-back {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+#lyrik-reader pre {
+    max-width: 100%;
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+    font: inherit;
+    line-height: 1.75;
+}
+
+[hidden] {
+    display: none !important;
+}
+
+@media (min-width: 48rem) {
+    #site-header {
+        padding-top: 2.5rem;
+    }
+
+    article header {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    #lyrik-content {
+        display: grid;
+        grid-template-columns: minmax(14rem, 0.8fr) minmax(0, 1.5fr);
+        gap: 1.5rem;
+        align-items: start;
+    }
+
+    #lyrik-index,
+    #lyrik-room {
+        margin-bottom: 0;
+    }
+
+    #art-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        align-items: start;
+    }
 }

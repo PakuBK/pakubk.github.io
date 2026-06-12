@@ -2,6 +2,29 @@ import { escapeHtml } from "./utility.js";
 
 export const newsContainer = document.getElementById("nachrichten-list");
 
+const INITIAL_NEWS_COUNT = 4;
+const NEWS_BATCH_SIZE = 5;
+
+const newsCard = (entry) => {
+  const title = escapeHtml(entry.title ?? "(kein titel)");
+  const date = escapeHtml(entry.date ?? "(kein datum)");
+  const text = escapeHtml(entry.text ?? "");
+  const mood = escapeHtml(entry.mood ?? "-");
+
+  return `
+    <article>
+      <header>
+        <h3>${title}</h3>
+        <time>${date}</time>
+      </header>
+      <p>${text}</p>
+      <footer>
+        <p>mood: ${mood}</p>
+      </footer>
+    </article>
+  `;
+};
+
 export const renderNews = (entries) => {
   if (!newsContainer) {
     return;
@@ -12,29 +35,34 @@ export const renderNews = (entries) => {
     return;
   }
 
-  const cards = entries
-    .map((entry) => {
-      const title = escapeHtml(entry.title ?? "(kein titel)");
-      const date = escapeHtml(entry.date ?? "(kein datum)");
-      const text = escapeHtml(entry.text ?? "");
-      const mood = escapeHtml(entry.mood ?? "-");
+  let visibleCount = Math.min(INITIAL_NEWS_COUNT, entries.length);
 
-      return `
-        <article>
-          <header>
-            <h3>${title}</h3>
-            <time>${date}</time>
-          </header>
-          <p>${text}</p>
-          <footer>
-            <p>mood: ${mood}</p>
-          </footer>
-        </article>
-      `;
-    })
-    .join("");
+  const renderVisibleNews = () => {
+    const cards = entries.slice(0, visibleCount).map(newsCard).join("");
+    const remainingCount = entries.length - visibleCount;
+    const loadMoreMarkup =
+      remainingCount > 0
+        ? `
+          <button id="news-load-more" type="button">
+            ${Math.min(NEWS_BATCH_SIZE, remainingCount)} mehr anzeigen
+          </button>
+        `
+        : "";
 
-  newsContainer.innerHTML = cards;
+    newsContainer.innerHTML = cards + loadMoreMarkup;
+
+    newsContainer
+      .querySelector("#news-load-more")
+      ?.addEventListener("click", () => {
+        visibleCount = Math.min(
+          visibleCount + NEWS_BATCH_SIZE,
+          entries.length,
+        );
+        renderVisibleNews();
+      });
+  };
+
+  renderVisibleNews();
 };
 
 export const loadNews = async () => {

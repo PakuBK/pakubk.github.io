@@ -4,6 +4,13 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>pakus web corner / lyrik</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&display=swap"
+            rel="stylesheet"
+        />
+        <link href="../css/index.css" rel="stylesheet" />
     </head>
     <body>
         <header id="site-header">
@@ -13,7 +20,7 @@
         <nav id="site-navigation" aria-label="hauptnavigation">
             <a href="./art.html">pixelart</a>
             <a href="./lyrik.html" aria-current="page">lyrik</a>
-            <a href="..">zurück</a>
+            <a href="../index.html">zurück</a>
         </nav>
 
         <main id="lyrik-content">
@@ -30,7 +37,7 @@
                 <header>
                     <h2 id="lyrik-heading">leseraum</h2>
                 </header>
-                <button id="lyrik-back" type="button">
+                <button id="lyrik-back" type="button" hidden>
                     zurück zu texte
                 </button>
                 <article id="lyrik-reader" aria-live="polite">

@@ -4,6 +4,13 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>pakus web corner / art</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&display=swap"
+            rel="stylesheet"
+        />
+        <link href="../css/index.css" rel="stylesheet" />
     </head>
     <body>
         <header id="site-header">
@@ -13,13 +20,17 @@
         <nav id="site-navigation" aria-label="hauptnavigation">
             <a href="./art.html" aria-current="page">pixelart</a>
             <a href="./lyrik.html">lyrik</a>
-            <a href="..">zurück</a>
+            <a href="../index.html">zurück</a>
         </nav>
 
         <main id="art-content">
             <section aria-labelledby="art-heading">
-                <h2 id="art-heading">pixelart</h2>
-                <div id="art-container"></div>
+                <header>
+                    <h2 id="art-heading">pixelart</h2>
+                </header>
+                <div id="art-container" aria-live="polite">
+                    <p>loading bilder...</p>
+                </div>
             </section>
         </main>
 

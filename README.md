@@ -33,9 +33,9 @@ deployment workflow.
 npm run dev
 ```
 
-The HTML intentionally contains no stylesheet or CSS classes. Page structure,
-IDs, `data-*` attributes, and ARIA attributes provide stable hooks for a new
-styling layer without coupling JavaScript behavior to presentation.
+The homepage and lyrical archive share the mobile-first stylesheet in
+`css/index.css`. Page structure, IDs, `data-*` attributes, and ARIA attributes
+provide stable hooks without coupling JavaScript behavior to presentation.
 
 Primary page hooks are `#site-header`, `#site-navigation`, `#home-content`,
 `#lyrik-content`, `#art-content`, and `#contact-content`. JavaScript behavior
