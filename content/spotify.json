@@ -1,15 +1,13 @@
 {
     "track": {
-        "title": "der fluch.",
+        "title": "Sandmann",
         "artists": [
-            "*maliiik",
-            "kalla",
-            "roemischdrei"
+            "OG Keemo"
         ],
-        "album": "der fluch.",
-        "image": "https://i.scdn.co/image/ab67616d00001e02b5fe59757816d858e6283f91",
-        "url": "https://open.spotify.com/track/2VzS9NFPf9Jwd8cmz0DKMj",
-        "played_at": "2026-06-15T09:17:55.643Z"
+        "album": "Mann Beisst Hund",
+        "image": "https://i.scdn.co/image/ab67616d00001e02870a6e8255f51d3ba275496c",
+        "url": "https://open.spotify.com/track/4nYAKTKHT3mEXHlqaX1tZ1",
+        "played_at": "2026-06-15T13:41:22.577Z"
     },
-    "updated_at": "2026-06-15T09:31:19.030Z"
+    "updated_at": "2026-06-15T15:30:44.220Z"
 }
