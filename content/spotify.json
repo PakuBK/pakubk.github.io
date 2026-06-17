@@ -1,13 +1,15 @@
 {
     "track": {
-        "title": "NRW",
+        "title": "Crash Dummy",
         "artists": [
-            "Boondawg"
+            "BHZ",
+            "Monk",
+            "Ion Miles"
         ],
-        "album": "KULT",
-        "image": "https://i.scdn.co/image/ab67616d00001e022cb293c67ed05c8b12530122",
-        "url": "https://open.spotify.com/track/4WcUdGXHHtKfZj9ysZka2D",
-        "played_at": "2026-06-16T23:12:52.513Z"
+        "album": "2013",
+        "image": "https://i.scdn.co/image/ab67616d00001e027b1eba1349e895daaecae983",
+        "url": "https://open.spotify.com/track/0kEO3qtCCZN8S42RdL1fp2",
+        "played_at": "2026-06-17T01:29:50.885Z"
     },
-    "updated_at": "2026-06-16T23:15:26.893Z"
+    "updated_at": "2026-06-17T01:45:23.792Z"
 }
