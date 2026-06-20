@@ -1,13 +1,14 @@
 {
     "track": {
-        "title": "Social Media",
+        "title": "Zivtenalarm",
         "artists": [
-            "fliggsy"
+            "MC Bomber",
+            "MC Kneipenkrieger"
         ],
-        "album": "Fliggsy for the people",
-        "image": "https://i.scdn.co/image/ab67616d00001e02ed69bf941714021ac0d23543",
-        "url": "https://open.spotify.com/track/2jcABrC03eFhFzFKPXGMnq",
-        "played_at": "2026-06-19T22:20:49.368Z"
+        "album": "Topstorytape 3",
+        "image": "https://i.scdn.co/image/ab67616d00001e0201daeee71c2bb4105cb08e20",
+        "url": "https://open.spotify.com/track/5RZTU4szHhsPaTT8DopBeL",
+        "played_at": "2026-06-20T12:18:24.991Z"
     },
-    "updated_at": "2026-06-19T23:08:27.635Z"
+    "updated_at": "2026-06-20T12:21:23.172Z"
 }
