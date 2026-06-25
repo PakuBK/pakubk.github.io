@@ -1,14 +1,13 @@
 {
     "track": {
-        "title": "Was alle sagen",
+        "title": "132 - Spuk im Netz - Teil 01",
         "artists": [
-            "ramonski",
-            "Flippa"
+            "Die drei ???"
         ],
-        "album": "Was alle sagen",
-        "image": "https://i.scdn.co/image/ab67616d00001e02bb3e06293b8b1169d6790e94",
-        "url": "https://open.spotify.com/track/3uf2pUeOq08BTjPGUDl0a0",
-        "played_at": "2026-06-24T18:17:51.783Z"
+        "album": "132/Spuk im Netz",
+        "image": "https://i.scdn.co/image/ab67616d00001e02ebff189258d828960ad77f14",
+        "url": "https://open.spotify.com/track/40LbRtVuGkU7QpBnjUn4O9",
+        "played_at": "2026-06-25T04:26:39.092Z"
     },
-    "updated_at": "2026-06-24T20:15:14.747Z"
+    "updated_at": "2026-06-25T04:39:42.432Z"
 }
