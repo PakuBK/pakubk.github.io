@@ -1,13 +1,15 @@
 {
     "track": {
-        "title": "Kids",
+        "title": "100",
         "artists": [
-            "MGMT"
+            "GERO",
+            "Ffjodor",
+            "Lugatti"
         ],
-        "album": "Oracular Spectacular",
-        "image": "https://i.scdn.co/image/ab67616d00001e02abdf7749aeb5229dbf305f03",
-        "url": "https://open.spotify.com/track/1jJci4qxiYcOHhQR247rEU",
-        "played_at": "2026-06-25T19:17:50.463Z"
+        "album": "100",
+        "image": "https://i.scdn.co/image/ab67616d00001e029741a20cff7f35b4d6ccd4ea",
+        "url": "https://open.spotify.com/track/6ve5TbtzTe57i6Wdp62xKZ",
+        "played_at": "2026-06-26T06:05:49.958Z"
     },
-    "updated_at": "2026-06-25T20:33:06.729Z"
+    "updated_at": "2026-06-26T06:18:14.382Z"
 }
