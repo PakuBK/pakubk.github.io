@@ -1,13 +1,15 @@
 {
     "track": {
-        "title": "Betty Boop",
+        "title": "Spring VIP",
         "artists": [
-            "Julie"
+            "Mr. Polska",
+            "Ski Aggu",
+            "Natte Visstick"
         ],
-        "album": "Betty Boop",
-        "image": "https://i.scdn.co/image/ab67616d00001e02da71416524b15030161a5585",
-        "url": "https://open.spotify.com/track/30ZM7FUXw9iHvUfvRwTQWQ",
-        "played_at": "2026-07-03T08:13:58.012Z"
+        "album": "Spring VIP",
+        "image": "https://i.scdn.co/image/ab67616d00001e024dab52000f8dae0b7f3c4a12",
+        "url": "https://open.spotify.com/track/6W2Otw9em8mMhoWsOcE05m",
+        "played_at": "2026-07-03T08:30:28.172Z"
     },
-    "updated_at": "2026-07-03T10:17:56.874Z"
+    "updated_at": "2026-07-03T12:22:04.858Z"
 }
