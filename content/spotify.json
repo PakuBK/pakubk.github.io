@@ -1,13 +1,14 @@
 {
     "track": {
-        "title": "Nur ein Wort",
+        "title": "Amicelli",
         "artists": [
-            "Wir sind Helden"
+            "Pavelo & Schnell",
+            "Ikkimel"
         ],
-        "album": "Von hier an blind",
-        "image": "https://i.scdn.co/image/ab67616d00001e023110ac6b32c463f398a9e051",
-        "url": "https://open.spotify.com/track/4hYinIaRxdaoEFSQni6K6I",
-        "played_at": "2026-07-09T19:08:04.540Z"
+        "album": "Volumen & Kraft",
+        "image": "https://i.scdn.co/image/ab67616d00001e022cdf262bbc86b1cea21ab4fd",
+        "url": "https://open.spotify.com/track/3yuHT1CFZyIqSlkk6ZHOjf",
+        "played_at": "2026-07-09T20:07:14.912Z"
     },
-    "updated_at": "2026-07-09T20:12:50.156Z"
+    "updated_at": "2026-07-09T21:48:37.200Z"
 }
