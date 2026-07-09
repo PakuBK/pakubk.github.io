@@ -1,13 +1,14 @@
 {
     "track": {
-        "title": "Kopf oder Kragen",
+        "title": "Slide",
         "artists": [
-            "Flelix"
+            "wurms",
+            "MDW"
         ],
-        "album": "Kopf oder Kragen",
-        "image": "https://i.scdn.co/image/ab67616d00001e021b978800c2197400726d5d57",
-        "url": "https://open.spotify.com/track/5lNAuhrSUqM3SA5DXgypX8",
-        "played_at": "2026-07-08T21:58:25.110Z"
+        "album": "Slide",
+        "image": "https://i.scdn.co/image/ab67616d00001e025cff8ff56a513082503aaa39",
+        "url": "https://open.spotify.com/track/3Kn1YwVoLw8D4s1cozvonK",
+        "played_at": "2026-07-09T13:03:31.079Z"
     },
-    "updated_at": "2026-07-09T07:52:12.975Z"
+    "updated_at": "2026-07-09T13:41:43.973Z"
 }
