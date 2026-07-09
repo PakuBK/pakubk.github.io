@@ -1,14 +1,13 @@
 {
     "track": {
-        "title": "laster",
+        "title": "Nur ein Wort",
         "artists": [
-            "jolle",
-            "wurms"
+            "Wir sind Helden"
         ],
-        "album": "laster",
-        "image": "https://i.scdn.co/image/ab67616d00001e02ebf6b4888a32de9200e7cacc",
-        "url": "https://open.spotify.com/track/3r1QMbUzff4aVrUIbYjUDf",
-        "played_at": "2026-07-09T15:01:58.863Z"
+        "album": "Von hier an blind",
+        "image": "https://i.scdn.co/image/ab67616d00001e023110ac6b32c463f398a9e051",
+        "url": "https://open.spotify.com/track/4hYinIaRxdaoEFSQni6K6I",
+        "played_at": "2026-07-09T19:08:04.540Z"
     },
-    "updated_at": "2026-07-09T16:17:02.817Z"
+    "updated_at": "2026-07-09T20:12:50.156Z"
 }
