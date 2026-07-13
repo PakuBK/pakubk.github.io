@@ -1,13 +1,14 @@
 {
     "track": {
-        "title": "Junge",
+        "title": "6x6",
         "artists": [
-            "Die Ärzte"
+            "234",
+            "supersonic"
         ],
-        "album": "Jazz ist anders",
-        "image": "https://i.scdn.co/image/ab67616d00001e02a94afe91bfd59fb157e364f8",
-        "url": "https://open.spotify.com/track/10waMsh44ojvTwXAIy213n",
-        "played_at": "2026-07-13T10:35:13.735Z"
+        "album": "6x6",
+        "image": "https://i.scdn.co/image/ab67616d00001e02cc2139e4eb5c1aae4980ebc2",
+        "url": "https://open.spotify.com/track/4ifajfCEaO9mO0C88aNb4e",
+        "played_at": "2026-07-13T15:27:13.240Z"
     },
-    "updated_at": "2026-07-13T10:40:53.884Z"
+    "updated_at": "2026-07-13T15:51:24.703Z"
 }
