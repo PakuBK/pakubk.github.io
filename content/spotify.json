@@ -1,13 +1,14 @@
 {
     "track": {
-        "title": "GLADBACH",
+        "title": "Großstadtdschungel",
         "artists": [
-            "Flippa"
+            "viko63",
+            "penglord"
         ],
-        "album": "GLADBACH",
-        "image": "https://i.scdn.co/image/ab67616d00001e0210534dea3d5d7b95f376f993",
-        "url": "https://open.spotify.com/track/5ftBsYA2HCIkx8Gspxvc9z",
-        "played_at": "2026-07-14T15:28:40.895Z"
+        "album": "Keller Tape",
+        "image": "https://i.scdn.co/image/ab67616d00001e02f09f8f75462505018323cee0",
+        "url": "https://open.spotify.com/track/3m4hTSHbsdfDtwBr0Ni6qm",
+        "played_at": "2026-07-14T16:56:57.320Z"
     },
-    "updated_at": "2026-07-14T15:44:37.615Z"
+    "updated_at": "2026-07-14T16:57:49.658Z"
 }
