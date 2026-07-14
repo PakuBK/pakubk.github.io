@@ -1,14 +1,13 @@
 {
     "track": {
-        "title": "Latin Gabber",
+        "title": "Tweedehands",
         "artists": [
-            "Joost",
-            "Vieze Asbak"
+            "Joost"
         ],
-        "album": "Kleinkunst",
-        "image": "https://i.scdn.co/image/ab67616d00001e02cfa0b10348b4a0168015e521",
-        "url": "https://open.spotify.com/track/7h9mteAF6ZQDh7QsnI7JZT",
-        "played_at": "2026-07-14T07:20:06.048Z"
+        "album": "Tweedehands",
+        "image": "https://i.scdn.co/image/ab67616d00001e0284f919a87347dee4558743d1",
+        "url": "https://open.spotify.com/track/6WIDTTNVtn6u93JT6hYBUK",
+        "played_at": "2026-07-14T09:51:11.766Z"
     },
-    "updated_at": "2026-07-14T08:39:36.077Z"
+    "updated_at": "2026-07-14T10:24:58.844Z"
 }
