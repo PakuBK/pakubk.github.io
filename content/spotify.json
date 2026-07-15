@@ -1,13 +1,14 @@
 {
     "track": {
-        "title": "Sterne",
+        "title": "Entweder",
         "artists": [
-            "BIBIZA"
+            "Prism",
+            "t-low"
         ],
-        "album": "Sterne",
-        "image": "https://i.scdn.co/image/ab67616d00001e02359cb94c1b39187e3a0e740f",
-        "url": "https://open.spotify.com/track/3zlzga4iyuLlMUmLxy9SfO",
-        "played_at": "2026-07-14T17:28:19.288Z"
+        "album": "Entweder",
+        "image": "https://i.scdn.co/image/ab67616d00001e02e29f9a3e4a44009621681ff3",
+        "url": "https://open.spotify.com/track/24gO7uXC7fJIuuQPpGbpwq",
+        "played_at": "2026-07-14T21:57:28.652Z"
     },
-    "updated_at": "2026-07-14T18:11:15.634Z"
+    "updated_at": "2026-07-15T06:30:21.163Z"
 }
