@@ -1,13 +1,14 @@
 {
     "track": {
-        "title": "Coupe",
+        "title": "6x6",
         "artists": [
-            "Coldyaa"
+            "234",
+            "supersonic"
         ],
-        "album": "Coupe",
-        "image": "https://i.scdn.co/image/ab67616d00001e02e679d1abb3c0bcc7811d9e86",
-        "url": "https://open.spotify.com/track/6cW9a8zfRF4t7hVcW5PFCo",
-        "played_at": "2026-07-16T11:43:39.134Z"
+        "album": "6x6",
+        "image": "https://i.scdn.co/image/ab67616d00001e02cc2139e4eb5c1aae4980ebc2",
+        "url": "https://open.spotify.com/track/4ifajfCEaO9mO0C88aNb4e",
+        "played_at": "2026-07-16T14:30:10.254Z"
     },
-    "updated_at": "2026-07-16T12:09:04.487Z"
+    "updated_at": "2026-07-16T15:54:34.025Z"
 }
