@@ -1,13 +1,14 @@
 {
     "track": {
-        "title": "700 Main Street",
+        "title": "Wellen",
         "artists": [
-            "DAT ADAM"
+            "Acidfrank",
+            "IMHIGHIMSORRY"
         ],
-        "album": "Chrome",
-        "image": "https://i.scdn.co/image/ab67616d00001e02b80e1058ae470c9eea0a1c15",
-        "url": "https://open.spotify.com/track/3BouYneOiIcnpuswhcfjwf",
-        "played_at": "2026-07-17T23:28:31.597Z"
+        "album": "CHIEN BRILLANT",
+        "image": "https://i.scdn.co/image/ab67616d00001e02299f65555a2e8150bed6052d",
+        "url": "https://open.spotify.com/track/11bBL4NL7GhdPYbEFpodYV",
+        "played_at": "2026-07-18T00:56:06.868Z"
     },
-    "updated_at": "2026-07-17T23:29:50.100Z"
+    "updated_at": "2026-07-18T01:01:25.346Z"
 }
