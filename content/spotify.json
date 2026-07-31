@@ -1,13 +1,14 @@
 {
     "track": {
-        "title": "bei nacht",
+        "title": "Zivtenalarm",
         "artists": [
-            "Lucid216"
+            "MC Bomber",
+            "MC Kneipenkrieger"
         ],
-        "album": "bei nacht",
-        "image": "https://i.scdn.co/image/ab67616d00001e02a4a6c2be317b0f23cb0ea176",
-        "url": "https://open.spotify.com/track/76doeViA54ZlSTPSvkXStK",
-        "played_at": "2026-07-31T16:43:10.651Z"
+        "album": "Topstorytape 3",
+        "image": "https://i.scdn.co/image/ab67616d00001e0201daeee71c2bb4105cb08e20",
+        "url": "https://open.spotify.com/track/5RZTU4szHhsPaTT8DopBeL",
+        "played_at": "2026-07-31T17:02:25.986Z"
     },
-    "updated_at": "2026-07-31T16:50:09.228Z"
+    "updated_at": "2026-07-31T18:14:59.688Z"
 }
