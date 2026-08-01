@@ -1,13 +1,14 @@
 {
     "track": {
-        "title": "Kranko Modus",
+        "title": "Morgentau",
         "artists": [
-            "M.T.A"
+            "TimmyT",
+            "SL3PY BOY"
         ],
-        "album": "DISS.CO",
-        "image": "https://i.scdn.co/image/ab67616d00001e02e3d33b15b975546c157a8407",
-        "url": "https://open.spotify.com/track/3qihUq4PcN8hDcDuezvYk2",
-        "played_at": "2026-08-01T12:14:19.573Z"
+        "album": "Morgentau",
+        "image": "https://i.scdn.co/image/ab67616d00001e021c0c7d1c6067b92f4640a589",
+        "url": "https://open.spotify.com/track/5oAGKJJQuG9Coe8wJQAU57",
+        "played_at": "2026-08-01T15:49:16.159Z"
     },
-    "updated_at": "2026-08-01T13:54:47.797Z"
+    "updated_at": "2026-08-01T16:13:05.293Z"
 }
