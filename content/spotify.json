@@ -1,13 +1,14 @@
 {
     "track": {
-        "title": "lieder für mich",
+        "title": "6x6",
         "artists": [
-            "lovehead"
+            "234",
+            "supersonic"
         ],
-        "album": "lieder für mich",
-        "image": "https://i.scdn.co/image/ab67616d00001e02aa38ced16b9c850ccedaee94",
-        "url": "https://open.spotify.com/track/1lAW1yb4rYTgj8Uyy0NR6G",
-        "played_at": "2026-08-03T07:36:46.046Z"
+        "album": "6x6",
+        "image": "https://i.scdn.co/image/ab67616d00001e02cc2139e4eb5c1aae4980ebc2",
+        "url": "https://open.spotify.com/track/4ifajfCEaO9mO0C88aNb4e",
+        "played_at": "2026-08-03T09:28:56.351Z"
     },
-    "updated_at": "2026-08-03T07:38:53.859Z"
+    "updated_at": "2026-08-03T10:57:28.361Z"
 }
