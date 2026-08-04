@@ -1,14 +1,13 @@
 {
     "track": {
-        "title": "Zivtenalarm",
+        "title": "Fahrtwind",
         "artists": [
-            "MC Bomber",
-            "MC Kneipenkrieger"
+            "tllpa"
         ],
-        "album": "Topstorytape 3",
-        "image": "https://i.scdn.co/image/ab67616d00001e0201daeee71c2bb4105cb08e20",
-        "url": "https://open.spotify.com/track/5RZTU4szHhsPaTT8DopBeL",
-        "played_at": "2026-08-04T20:04:31.391Z"
+        "album": "Fahrtwind",
+        "image": "https://i.scdn.co/image/ab67616d00001e02836d585a0ccf19b6d78a6587",
+        "url": "https://open.spotify.com/track/086XX342fZ4wIyTSpobstL",
+        "played_at": "2026-08-04T20:27:20.944Z"
     },
-    "updated_at": "2026-08-04T20:05:20.200Z"
+    "updated_at": "2026-08-04T21:35:01.542Z"
 }
