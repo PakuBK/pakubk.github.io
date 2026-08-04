@@ -1,13 +1,14 @@
 {
     "track": {
-        "title": "keine liebe",
+        "title": "was ich will",
         "artists": [
-            "beslik"
+            "beslik",
+            "DR.PHIL"
         ],
-        "album": "keine liebe",
-        "image": "https://i.scdn.co/image/ab67616d00001e02f4ea04bac7b9f507005fea3c",
-        "url": "https://open.spotify.com/track/1j4aQGnubQFcN8GUk1zfCR",
-        "played_at": "2026-08-04T14:02:07.184Z"
+        "album": "was ich will",
+        "image": "https://i.scdn.co/image/ab67616d00001e02aa44088f5cf0a1eea87d1b0a",
+        "url": "https://open.spotify.com/track/3TpJM0n2MmDJWYAiBxrd1c",
+        "played_at": "2026-08-04T16:39:55.172Z"
     },
-    "updated_at": "2026-08-04T14:45:15.897Z"
+    "updated_at": "2026-08-04T16:43:50.890Z"
 }
