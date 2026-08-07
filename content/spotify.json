@@ -1,13 +1,15 @@
 {
     "track": {
-        "title": "Metall",
+        "title": "Barcode",
         "artists": [
-            "Leftovers"
+            "HTN",
+            "Veli",
+            "*maliiik"
         ],
-        "album": "Müde",
-        "image": "https://i.scdn.co/image/ab67616d00001e02bae0a8c567af4ee4fc79ae00",
-        "url": "https://open.spotify.com/track/3nqKLJFgigEIxtU5F4D6CC",
-        "played_at": "2026-08-07T04:18:29.923Z"
+        "album": "Barcode",
+        "image": "https://i.scdn.co/image/ab67616d00001e02dc441ee6a8e7c51e445461ab",
+        "url": "https://open.spotify.com/track/1VPrUA0ArmfDV8wsv4CLQm",
+        "played_at": "2026-08-07T16:52:57.978Z"
     },
-    "updated_at": "2026-08-07T05:10:36.213Z"
+    "updated_at": "2026-08-07T17:32:34.963Z"
 }
