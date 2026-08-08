@@ -1,15 +1,14 @@
 {
     "track": {
-        "title": "Barcode",
+        "title": "Rock It!",
         "artists": [
-            "HTN",
-            "Veli",
-            "*maliiik"
+            "viko63",
+            "penglord"
         ],
-        "album": "Barcode",
-        "image": "https://i.scdn.co/image/ab67616d00001e02dc441ee6a8e7c51e445461ab",
-        "url": "https://open.spotify.com/track/1VPrUA0ArmfDV8wsv4CLQm",
-        "played_at": "2026-08-07T16:52:57.978Z"
+        "album": "Rock It!",
+        "image": "https://i.scdn.co/image/ab67616d00001e0293ba69facd78aa4c75df96d8",
+        "url": "https://open.spotify.com/track/3n4BPcVytg0Z3j4QhPj1Eu",
+        "played_at": "2026-08-08T10:01:26.573Z"
     },
-    "updated_at": "2026-08-07T17:32:34.963Z"
+    "updated_at": "2026-08-08T10:17:02.594Z"
 }
