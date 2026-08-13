@@ -1,13 +1,14 @@
 {
     "track": {
-        "title": "STOP",
+        "title": "Undercover",
         "artists": [
-            "Boondawg"
+            "MC Bomber",
+            "MC Kneipenkrieger"
         ],
-        "album": "DONT TRY THIS AT HOME",
-        "image": "https://i.scdn.co/image/ab67616d00001e02acae005da8aac13155196696",
-        "url": "https://open.spotify.com/track/10wN7VGTQH6EyFTtc6Jquk",
-        "played_at": "2026-08-13T13:45:23.631Z"
+        "album": "Höllencypher",
+        "image": "https://i.scdn.co/image/ab67616d00001e0237113bd2a3ea25bf6fbdbaf5",
+        "url": "https://open.spotify.com/track/16to0YExCRpfMbBtpV2DF4",
+        "played_at": "2026-08-13T14:47:20.289Z"
     },
-    "updated_at": "2026-08-13T13:45:54.306Z"
+    "updated_at": "2026-08-13T14:47:34.635Z"
 }
