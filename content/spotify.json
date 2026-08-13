@@ -1,13 +1,14 @@
 {
     "track": {
-        "title": "cliché",
+        "title": "Mr. Olympia - Bonus",
         "artists": [
-            "Boondawg"
+            "Boondawg",
+            "Eljero Winchester"
         ],
-        "album": "cliché",
-        "image": "https://i.scdn.co/image/ab67616d00001e021f045ed1515988a3ab39a8b6",
-        "url": "https://open.spotify.com/track/1ExfAhKQemQ3cu3zUODzvk",
-        "played_at": "2026-08-13T10:16:07.251Z"
+        "album": "Say Less (Bonus)",
+        "image": "https://i.scdn.co/image/ab67616d00001e023f98b51beeaeb4ea184e497b",
+        "url": "https://open.spotify.com/track/4d9lc7Tpskg2i7rNVHhWSh",
+        "played_at": "2026-08-13T10:31:42.237Z"
     },
-    "updated_at": "2026-08-13T10:17:04.698Z"
+    "updated_at": "2026-08-13T11:13:51.102Z"
 }
