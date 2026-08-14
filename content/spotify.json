@@ -1,14 +1,13 @@
 {
     "track": {
-        "title": "Ohne Ende",
+        "title": "Basic",
         "artists": [
-            "Levin Liam",
-            "SIRA"
+            "Tom Hengst"
         ],
-        "album": "Ohne Ende",
-        "image": "https://i.scdn.co/image/ab67616d00001e024347002169b0dfdd08b687a0",
-        "url": "https://open.spotify.com/track/0Hug5vymE3fmJcGZF1hrup",
-        "played_at": "2026-08-14T11:45:10.519Z"
+        "album": "Gib dein Geld",
+        "image": "https://i.scdn.co/image/ab67616d00001e02d727282474471ef96177ae5c",
+        "url": "https://open.spotify.com/track/0kQbF0cX2COiM1wvgS879s",
+        "played_at": "2026-08-14T13:19:03.495Z"
     },
-    "updated_at": "2026-08-14T11:56:10.797Z"
+    "updated_at": "2026-08-14T13:24:14.669Z"
 }
