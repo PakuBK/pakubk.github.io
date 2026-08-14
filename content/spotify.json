@@ -1,13 +1,14 @@
 {
     "track": {
-        "title": "Désolée",
+        "title": "Fiat 500",
         "artists": [
-            "softboy ivo"
+            "Julie",
+            "Pablo Rochat"
         ],
-        "album": "Trust Ur Gut",
-        "image": "https://i.scdn.co/image/ab67616d00001e02dad889f4acaf23261440f950",
-        "url": "https://open.spotify.com/track/0FYEHC3P8snrJu6Zi39THI",
-        "played_at": "2026-08-14T17:29:55.006Z"
+        "album": "Fiat 500",
+        "image": "https://i.scdn.co/image/ab67616d00001e022a71a86f052523f6921506f4",
+        "url": "https://open.spotify.com/track/4hxjiOva2qI3TCs5WUS4R3",
+        "played_at": "2026-08-14T17:38:06.280Z"
     },
-    "updated_at": "2026-08-14T17:31:39.010Z"
+    "updated_at": "2026-08-14T18:28:56.498Z"
 }
