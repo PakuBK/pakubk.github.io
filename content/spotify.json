@@ -1,13 +1,14 @@
 {
     "track": {
-        "title": "Nullkommaneun",
+        "title": "Ohne Verträge",
         "artists": [
-            "SSIO"
+            "Tom Hengst",
+            "Kwam.E"
         ],
-        "album": "0,9 (Deluxe Version)",
-        "image": "https://i.scdn.co/image/ab67616d00001e02a0bd113bf296b83276d1372d",
-        "url": "https://open.spotify.com/track/3cLXgIlvugVKpWBmO5v9oy",
-        "played_at": "2026-08-15T21:48:54.887Z"
+        "album": "Ohne Verträge",
+        "image": "https://i.scdn.co/image/ab67616d00001e02833f566c3950594bbc2ba85b",
+        "url": "https://open.spotify.com/track/1oqzHne5ESL6wn6KzAy94f",
+        "played_at": "2026-08-15T21:54:58.904Z"
     },
-    "updated_at": "2026-08-15T21:49:05.789Z"
+    "updated_at": "2026-08-15T22:07:02.917Z"
 }
