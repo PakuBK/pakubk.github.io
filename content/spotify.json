@@ -1,13 +1,15 @@
 {
     "track": {
-        "title": "german language",
+        "title": "ASCH AB!",
         "artists": [
-            "Tiavo"
+            "rémi.fr",
+            "Julie",
+            "estrato"
         ],
-        "album": "german language",
-        "image": "https://i.scdn.co/image/ab6742d3000052b738989a21e5513c36615af346",
-        "url": "https://open.spotify.com/track/6dlcnhLjYFkhUJifnZ4ppU",
-        "played_at": "2026-08-17T21:11:01.571Z"
+        "album": "TRAMINER R",
+        "image": "https://i.scdn.co/image/ab67616d00001e027d2b0dd4c4daed211c24b4a2",
+        "url": "https://open.spotify.com/track/4n3CDA4PTU0RHAhEmtlQ41",
+        "played_at": "2026-08-18T10:35:14.399Z"
     },
-    "updated_at": "2026-08-17T21:35:41.355Z"
+    "updated_at": "2026-08-18T10:37:38.937Z"
 }
