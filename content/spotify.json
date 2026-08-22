@@ -1,13 +1,14 @@
 {
     "track": {
-        "title": "NRW",
+        "title": "JUST DO IT",
         "artists": [
-            "Boondawg"
+            "Boondawg",
+            "Yc"
         ],
-        "album": "KULT",
-        "image": "https://i.scdn.co/image/ab67616d00001e022cb293c67ed05c8b12530122",
-        "url": "https://open.spotify.com/track/4WcUdGXHHtKfZj9ysZka2D",
-        "played_at": "2026-08-22T16:51:06.241Z"
+        "album": "DONT TRY THIS AT HOME",
+        "image": "https://i.scdn.co/image/ab67616d00001e02acae005da8aac13155196696",
+        "url": "https://open.spotify.com/track/57BT3KQYw0kS68QFkSuQ9k",
+        "played_at": "2026-08-22T17:46:59.216Z"
     },
-    "updated_at": "2026-08-22T17:01:59.066Z"
+    "updated_at": "2026-08-22T17:53:25.066Z"
 }
