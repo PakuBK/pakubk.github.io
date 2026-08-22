@@ -1,13 +1,15 @@
 {
     "track": {
-        "title": "ZAHLTAG",
+        "title": "Ich muss raus",
         "artists": [
-            "Boondawg"
+            "wavybaby",
+            "Flippa",
+            "dodtcom"
         ],
-        "album": "KULT",
-        "image": "https://i.scdn.co/image/ab67616d00001e022cb293c67ed05c8b12530122",
-        "url": "https://open.spotify.com/track/4iIHvqwjvL4MW2KDmatV0H",
-        "played_at": "2026-08-22T15:28:53.474Z"
+        "album": "Ich muss raus",
+        "image": "https://i.scdn.co/image/ab67616d00001e0279c85289a16b26fd6a700ca1",
+        "url": "https://open.spotify.com/track/1nW0L7eJK9pYapvSskHaNz",
+        "played_at": "2026-08-22T16:33:36.427Z"
     },
-    "updated_at": "2026-08-22T15:28:58.942Z"
+    "updated_at": "2026-08-22T16:42:38.368Z"
 }
