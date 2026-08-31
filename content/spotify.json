@@ -1,13 +1,14 @@
 {
     "track": {
-        "title": "ZAHLTAG",
+        "title": "Time Out",
         "artists": [
-            "Boondawg"
+            "fliggsy",
+            "John on a Mission"
         ],
-        "album": "KULT",
-        "image": "https://i.scdn.co/image/ab67616d00001e022cb293c67ed05c8b12530122",
-        "url": "https://open.spotify.com/track/4iIHvqwjvL4MW2KDmatV0H",
-        "played_at": "2026-08-31T09:52:14.431Z"
+        "album": "Rider Music 3",
+        "image": "https://i.scdn.co/image/ab67616d00001e0211985329b7992a8653fbe9c9",
+        "url": "https://open.spotify.com/track/5eQtVJtWEOyeCBno0Ss9pj",
+        "played_at": "2026-08-31T15:26:45.869Z"
     },
-    "updated_at": "2026-08-31T13:58:18.732Z"
+    "updated_at": "2026-08-31T19:56:47.804Z"
 }
