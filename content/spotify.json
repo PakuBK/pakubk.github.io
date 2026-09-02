@@ -1,13 +1,14 @@
 {
     "track": {
-        "title": "Omg",
+        "title": "Zickzack",
         "artists": [
-            "Urbannino"
+            "makko",
+            "lucidbeatz"
         ],
-        "album": "Omg",
-        "image": "https://i.scdn.co/image/ab67616d00001e0233520fdb9a0dfbc36318c3d1",
-        "url": "https://open.spotify.com/track/2sO0Kl3CXDWWWXtKaRCdXl",
-        "played_at": "2026-09-02T16:04:29.015Z"
+        "album": "Zickzack",
+        "image": "https://i.scdn.co/image/ab67616d00001e02b4f6d8790f0e558304026321",
+        "url": "https://open.spotify.com/track/7mBDRYTfJC24sFknHOGJb0",
+        "played_at": "2026-09-02T18:36:31.287Z"
     },
-    "updated_at": "2026-09-02T17:23:38.125Z"
+    "updated_at": "2026-09-02T20:03:16.983Z"
 }
