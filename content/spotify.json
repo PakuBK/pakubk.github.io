@@ -1,13 +1,14 @@
 {
     "track": {
-        "title": "Drive",
+        "title": "Mehr Cheddar",
         "artists": [
-            "Oh Wonder"
+            "Buffalo",
+            "Jorinho95"
         ],
-        "album": "Oh Wonder",
-        "image": "https://i.scdn.co/image/ab67616d00001e027cc94e776ebb63dd08c8422c",
-        "url": "https://open.spotify.com/track/2kJqNHHGOzLNahukdvlDWN",
-        "played_at": "2026-09-03T09:45:34.243Z"
+        "album": "B2B",
+        "image": "https://i.scdn.co/image/ab67616d00001e029eae0d06a791a3776b5ed625",
+        "url": "https://open.spotify.com/track/4J8SehNr1kimvRlfvhhMlw",
+        "played_at": "2026-09-03T12:15:16.922Z"
     },
-    "updated_at": "2026-09-03T09:48:39.113Z"
+    "updated_at": "2026-09-03T13:56:36.166Z"
 }
