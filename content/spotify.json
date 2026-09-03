@@ -1,14 +1,13 @@
 {
     "track": {
-        "title": "Zickzack",
+        "title": "Drive",
         "artists": [
-            "makko",
-            "lucidbeatz"
+            "Oh Wonder"
         ],
-        "album": "Zickzack",
-        "image": "https://i.scdn.co/image/ab67616d00001e02b4f6d8790f0e558304026321",
-        "url": "https://open.spotify.com/track/7mBDRYTfJC24sFknHOGJb0",
-        "played_at": "2026-09-02T18:36:31.287Z"
+        "album": "Oh Wonder",
+        "image": "https://i.scdn.co/image/ab67616d00001e027cc94e776ebb63dd08c8422c",
+        "url": "https://open.spotify.com/track/2kJqNHHGOzLNahukdvlDWN",
+        "played_at": "2026-09-03T09:45:34.243Z"
     },
-    "updated_at": "2026-09-02T20:03:16.983Z"
+    "updated_at": "2026-09-03T09:48:39.113Z"
 }
