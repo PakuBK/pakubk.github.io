@@ -1,13 +1,15 @@
 {
     "track": {
-        "title": "Kleiner Prinz x Rude Boy",
+        "title": "Mr. H&C",
         "artists": [
-            "bill clesen"
+            "H&C",
+            "Haqat",
+            "Cazal"
         ],
-        "album": "Kleiner Prinz x Rude Boy",
-        "image": "https://i.scdn.co/image/ab67616d00001e026830a1f259b238090cbb60f2",
-        "url": "https://open.spotify.com/track/5iW2MsyMahvnr2K0QX8TE3",
-        "played_at": "2026-09-10T10:08:29.910Z"
+        "album": "Mr. H&C",
+        "image": "https://i.scdn.co/image/ab67616d00001e029eb925e5d435ad68b8572dd7",
+        "url": "https://open.spotify.com/track/5VhFocGVifFspPzpeh6k49",
+        "played_at": "2026-09-10T14:44:38.355Z"
     },
-    "updated_at": "2026-09-10T11:49:48.718Z"
+    "updated_at": "2026-09-10T15:23:32.287Z"
 }
