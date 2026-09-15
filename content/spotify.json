@@ -1,13 +1,15 @@
 {
     "track": {
-        "title": "Parfum",
+        "title": "Pinke Tasche",
         "artists": [
-            "skrt cobain"
+            "Saint Perry Pean",
+            "OG Ti",
+            "babyheat"
         ],
-        "album": "Parfum",
-        "image": "https://i.scdn.co/image/ab67616d00001e02ec3e4cd47f643fde17961d49",
-        "url": "https://open.spotify.com/track/7BhCZOUjvSyWaWQPcpTZma",
-        "played_at": "2026-09-15T06:43:23.612Z"
+        "album": "Pinke Tasche",
+        "image": "https://i.scdn.co/image/ab67616d00001e02fcef79820546291346490a55",
+        "url": "https://open.spotify.com/track/6ak20KNiJ7ycr6o3G3WLC4",
+        "played_at": "2026-09-15T12:13:28.692Z"
     },
-    "updated_at": "2026-09-15T06:44:34.101Z"
+    "updated_at": "2026-09-15T12:14:56.555Z"
 }
