@@ -1,13 +1,14 @@
 {
     "track": {
-        "title": "Gift",
+        "title": "Oh Nein",
         "artists": [
-            "Pink Katana"
+            "Teuterekordz",
+            "Admiral Klatsch"
         ],
-        "album": "Gift",
-        "image": "https://i.scdn.co/image/ab67616d00001e022db12e16e0b7a2c55cf440dd",
-        "url": "https://open.spotify.com/track/64ukaQC8EGPS8jJUXMi6XS",
-        "played_at": "2026-09-16T11:07:19.550Z"
+        "album": "Teute Mixtape",
+        "image": "https://i.scdn.co/image/ab67616d00001e0206e14fd3902f0beb311d6f2b",
+        "url": "https://open.spotify.com/track/5JgwHy7d0CO483BEqnbM5a",
+        "played_at": "2026-09-16T15:28:53.512Z"
     },
-    "updated_at": "2026-09-16T11:38:35.154Z"
+    "updated_at": "2026-09-16T15:32:48.766Z"
 }
