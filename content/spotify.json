@@ -1,13 +1,15 @@
 {
     "track": {
-        "title": "LOBSTER",
+        "title": "Kaltes Bier",
         "artists": [
-            "Tom Hengst"
+            "grim104",
+            "Admiral Klatsch",
+            "Sofia Portanet"
         ],
-        "album": "LOBSTER",
-        "image": "https://i.scdn.co/image/ab67616d00001e02ed912d2b3fa031dc959f3727",
-        "url": "https://open.spotify.com/track/06X1jf46YLupZP2dWHgmqX",
-        "played_at": "2026-09-17T18:09:23.747Z"
+        "album": "Kaltes Bier",
+        "image": "https://i.scdn.co/image/ab67616d00001e02bcb2356f8cfce727ec7ae716",
+        "url": "https://open.spotify.com/track/2usVndOYUMVFwKQB57ZIva",
+        "played_at": "2026-09-18T09:35:16.504Z"
     },
-    "updated_at": "2026-09-17T18:56:38.593Z"
+    "updated_at": "2026-09-18T09:35:47.361Z"
 }
