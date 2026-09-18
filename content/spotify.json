@@ -1,13 +1,14 @@
 {
     "track": {
-        "title": "Babe",
+        "title": "1. Mai",
         "artists": [
-            "Yowlandi"
+            "Gustav Ganove",
+            "Havel Power"
         ],
-        "album": "Babe",
-        "image": "https://i.scdn.co/image/ab67616d00001e0254decfe5e1d66917338aee3a",
-        "url": "https://open.spotify.com/track/61wtihlfNjGHCk5DY2aiYR",
-        "played_at": "2026-09-18T13:33:59.175Z"
+        "album": "1. Mai",
+        "image": "https://i.scdn.co/image/ab67616d00001e02697da25d80722eac0d04646d",
+        "url": "https://open.spotify.com/track/7nPzw06hGOR7fQcUqERa6a",
+        "played_at": "2026-09-18T16:45:30.637Z"
     },
-    "updated_at": "2026-09-18T13:51:11.944Z"
+    "updated_at": "2026-09-18T17:23:06.259Z"
 }
