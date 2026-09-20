@@ -1,13 +1,14 @@
 {
     "track": {
-        "title": "Ikarus",
+        "title": "1. Mai",
         "artists": [
-            "Myles"
+            "Gustav Ganove",
+            "Havel Power"
         ],
-        "album": "Ikarus",
-        "image": "https://i.scdn.co/image/ab67616d00001e026dd2656b9048cc874f2d34b4",
-        "url": "https://open.spotify.com/track/2oxrZ2eX44XOV7OxfYTLc2",
-        "played_at": "2026-09-20T12:05:55.843Z"
+        "album": "1. Mai",
+        "image": "https://i.scdn.co/image/ab67616d00001e02697da25d80722eac0d04646d",
+        "url": "https://open.spotify.com/track/7nPzw06hGOR7fQcUqERa6a",
+        "played_at": "2026-09-20T17:41:50.672Z"
     },
-    "updated_at": "2026-09-20T14:51:33.449Z"
+    "updated_at": "2026-09-20T17:50:39.603Z"
 }
