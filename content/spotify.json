@@ -1,14 +1,13 @@
 {
     "track": {
-        "title": "Erster Platz",
+        "title": "Heartbeat",
         "artists": [
-            "Chapo102",
-            "102 Boyz"
+            "Childish Gambino"
         ],
-        "album": "Erster Platz",
-        "image": "https://i.scdn.co/image/ab67616d00001e0283db4d27f23ce92f33c8369f",
-        "url": "https://open.spotify.com/track/0ysUn2ztjaTxMOegmzVoX3",
-        "played_at": "2026-09-23T18:59:10.077Z"
+        "album": "Camp",
+        "image": "https://i.scdn.co/image/ab67616d00001e026182cfe2e2a090d125c81dc0",
+        "url": "https://open.spotify.com/track/5AGQSF0ytihJyt96K5vW9d",
+        "played_at": "2026-09-23T23:01:00.340Z"
     },
-    "updated_at": "2026-09-23T20:21:01.546Z"
+    "updated_at": "2026-09-23T23:01:07.274Z"
 }
