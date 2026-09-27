@@ -1,13 +1,14 @@
 {
     "track": {
-        "title": "Rocke Das",
+        "title": "Drecksstadt",
         "artists": [
-            "Plattenlieferant"
+            "Atlas",
+            "Elhadj"
         ],
-        "album": "Rocke Das",
-        "image": "https://i.scdn.co/image/ab67616d00001e02c74e499c00e7efcb22633931",
-        "url": "https://open.spotify.com/track/5YMJHmF1LFH19fR8iHcNYP",
-        "played_at": "2026-09-26T19:45:02.214Z"
+        "album": "Young Sauce vol. 2",
+        "image": "https://i.scdn.co/image/ab67616d00001e02443d2c69db1b1fa2eca1f6d9",
+        "url": "https://open.spotify.com/track/1eaBhMLj4jsad6jO6QSUVX",
+        "played_at": "2026-09-27T03:16:59.026Z"
     },
-    "updated_at": "2026-09-26T22:09:18.009Z"
+    "updated_at": "2026-09-27T05:46:57.985Z"
 }
