@@ -1,13 +1,14 @@
 {
     "track": {
-        "title": "Backseat",
+        "title": "Tag Der Arbeit",
         "artists": [
-            "Balu Brigada"
+            "Union 1850",
+            "MC Kader/ML"
         ],
-        "album": "Portal",
-        "image": "https://i.scdn.co/image/ab67616d00001e021fc8017bbf246da18b953789",
-        "url": "https://open.spotify.com/track/7j6PWLaubVavCLE4peea8S",
-        "played_at": "2026-10-01T20:45:48.908Z"
+        "album": "Tag Der Arbeit",
+        "image": "https://i.scdn.co/image/ab67616d00001e02bea5cfc0a9c74e0dba24eb9c",
+        "url": "https://open.spotify.com/track/2aJrzD9X2y4aKzzkxiPg4v",
+        "played_at": "2026-10-02T06:00:25.702Z"
     },
-    "updated_at": "2026-10-01T21:06:30.795Z"
+    "updated_at": "2026-10-02T06:20:07.027Z"
 }
