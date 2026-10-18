@@ -1,15 +1,13 @@
 {
     "track": {
-        "title": "Sprengstoff",
+        "title": "Angst",
         "artists": [
-            "Ivo der Bandit",
-            "MXM",
-            "Pavel"
+            "Leftovers"
         ],
-        "album": "Verbrecherfunk",
-        "image": "https://i.scdn.co/image/ab67616d00001e02b318f47c0d7b91cf483eded0",
-        "url": "https://open.spotify.com/track/1ZhOwP2tEYi3BtUpPKLZ5v",
-        "played_at": "2026-10-17T18:55:00.585Z"
+        "album": "Krach",
+        "image": "https://i.scdn.co/image/ab67616d00001e026486f16a416e5c100bbde0c7",
+        "url": "https://open.spotify.com/track/0WVu0Ts83ouxQrqZjSAoGt",
+        "played_at": "2026-10-18T17:30:26.439Z"
     },
-    "updated_at": "2026-10-17T19:14:07.249Z"
+    "updated_at": "2026-10-18T17:31:07.220Z"
 }
