@@ -1,13 +1,16 @@
 {
     "track": {
-        "title": "Schlaf",
+        "title": "Spieleabend",
         "artists": [
-            "Buntspecht"
+            "DJ Präsident",
+            "Lucky L",
+            "Union 1850",
+            "Schandro"
         ],
-        "album": "Draußen im Kopf",
-        "image": "https://i.scdn.co/image/ab67616d00001e02dbb0c7643caaf0afad0b1ff2",
-        "url": "https://open.spotify.com/track/7BJmUQSAFGQiV0IcylCW1g",
-        "played_at": "2026-10-26T00:18:30.136Z"
+        "album": "Spieleabend",
+        "image": "https://i.scdn.co/image/ab67616d00001e027dbae15afbb44e32419cad08",
+        "url": "https://open.spotify.com/track/0IpuD3S6pgE7EB9XeTRWxY",
+        "played_at": "2026-10-26T11:15:07.916Z"
     },
-    "updated_at": "2026-10-26T00:37:51.581Z"
+    "updated_at": "2026-10-26T11:17:43.144Z"
 }
