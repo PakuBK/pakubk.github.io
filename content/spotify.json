@@ -1,13 +1,15 @@
 {
     "track": {
-        "title": "So wie früher",
+        "title": "Feuermelder",
         "artists": [
-            "Sprinter"
+            "1019",
+            "Lucio101",
+            "Nizi19"
         ],
-        "album": "So wie früher",
-        "image": "https://i.scdn.co/image/ab67616d00001e02e6e1b4cc7f2281c8594093a6",
-        "url": "https://open.spotify.com/track/6vccfQUZPDr38onENb0tNI",
-        "played_at": "2026-10-27T12:11:16.677Z"
+        "album": "Superstar",
+        "image": "https://i.scdn.co/image/ab67616d00001e0255c02379812810d68bb6d4cc",
+        "url": "https://open.spotify.com/track/4LYQuX5i4dvaDwKu4UDGoB",
+        "played_at": "2026-10-27T16:53:33.243Z"
     },
-    "updated_at": "2026-10-27T12:11:49.713Z"
+    "updated_at": "2026-10-27T18:02:38.165Z"
 }
