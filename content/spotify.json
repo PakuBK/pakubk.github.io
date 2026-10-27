@@ -1,15 +1,13 @@
 {
     "track": {
-        "title": "BROAT",
+        "title": "Brennnesseln",
         "artists": [
-            "Dexter",
-            "*maliiik",
-            "Ahzumjot"
+            "Buntspecht"
         ],
-        "album": "BROAT",
-        "image": "https://i.scdn.co/image/ab67616d00001e0279ef7033850fd18af92e639e",
-        "url": "https://open.spotify.com/track/3GjJXUtqcVeBFOEI9MUyHc",
-        "played_at": "2026-10-26T21:43:57.604Z"
+        "album": "Großteils Kleinigkeiten",
+        "image": "https://i.scdn.co/image/ab67616d00001e027e25469fd270f9ac3bd94642",
+        "url": "https://open.spotify.com/track/59raVQsPdSjlZCAGKDdVxw",
+        "played_at": "2026-10-26T23:43:20.313Z"
     },
-    "updated_at": "2026-10-26T21:47:58.517Z"
+    "updated_at": "2026-10-27T00:55:46.401Z"
 }
