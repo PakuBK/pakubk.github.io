@@ -1,13 +1,14 @@
 {
     "track": {
-        "title": "Sie",
+        "title": "1. Mai",
         "artists": [
-            "Anda Morts"
+            "Gustav Ganove",
+            "Havel Power"
         ],
-        "album": "ANS",
-        "image": "https://i.scdn.co/image/ab67616d00001e02d8e971a290995f2d7247ea3d",
-        "url": "https://open.spotify.com/track/6TiKQvuHCSfkpQwc3AKtGX",
-        "played_at": "2026-10-28T13:50:11.835Z"
+        "album": "1. Mai",
+        "image": "https://i.scdn.co/image/ab67616d00001e02697da25d80722eac0d04646d",
+        "url": "https://open.spotify.com/track/7nPzw06hGOR7fQcUqERa6a",
+        "played_at": "2026-10-28T16:35:35.952Z"
     },
-    "updated_at": "2026-10-28T13:56:45.087Z"
+    "updated_at": "2026-10-28T19:26:43.659Z"
 }
