@@ -1,13 +1,14 @@
 {
     "track": {
-        "title": "Fern",
+        "title": "Tag Der Arbeit",
         "artists": [
-            "Streichelt"
+            "Union 1850",
+            "MC Kader/ML"
         ],
-        "album": "Fern",
-        "image": "https://i.scdn.co/image/ab67616d00001e0219ec54f7cb4138362633f609",
-        "url": "https://open.spotify.com/track/3LhL5Vzr5VOuMv7PGLCc6V",
-        "played_at": "2026-11-01T19:06:49.115Z"
+        "album": "Tag Der Arbeit",
+        "image": "https://i.scdn.co/image/ab67616d00001e02bea5cfc0a9c74e0dba24eb9c",
+        "url": "https://open.spotify.com/track/2aJrzD9X2y4aKzzkxiPg4v",
+        "played_at": "2026-11-01T22:48:02.835Z"
     },
-    "updated_at": "2026-11-01T19:06:57.420Z"
+    "updated_at": "2026-11-01T22:48:11.718Z"
 }
