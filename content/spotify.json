@@ -1,13 +1,14 @@
 {
     "track": {
-        "title": "birds",
+        "title": "1. Mai",
         "artists": [
-            "Boondawg"
+            "Gustav Ganove",
+            "Havel Power"
         ],
-        "album": "birds",
-        "image": "https://i.scdn.co/image/ab67616d00001e02e86a8652a385488b494572bf",
-        "url": "https://open.spotify.com/track/3aTBITPIwTfsqI8y1dbwOj",
-        "played_at": "2026-11-13T06:49:52.139Z"
+        "album": "1. Mai",
+        "image": "https://i.scdn.co/image/ab67616d00001e02697da25d80722eac0d04646d",
+        "url": "https://open.spotify.com/track/7nPzw06hGOR7fQcUqERa6a",
+        "played_at": "2026-11-13T15:35:56.039Z"
     },
-    "updated_at": "2026-11-13T07:24:31.073Z"
+    "updated_at": "2026-11-13T15:38:20.945Z"
 }
