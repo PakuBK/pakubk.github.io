@@ -1,13 +1,14 @@
 {
     "track": {
-        "title": "NRW",
+        "title": "Weit Weit Weg",
         "artists": [
-            "Boondawg"
+            "Julie",
+            "Pablo Rochat"
         ],
-        "album": "KULT",
-        "image": "https://i.scdn.co/image/ab67616d00001e022cb293c67ed05c8b12530122",
-        "url": "https://open.spotify.com/track/4WcUdGXHHtKfZj9ysZka2D",
-        "played_at": "2026-11-19T17:42:56.997Z"
+        "album": "Weit Weit Weg",
+        "image": "https://i.scdn.co/image/ab67616d00001e0275616e97044e1160cd077d86",
+        "url": "https://open.spotify.com/track/0KewXbmRMSau1ceYNh5zMY",
+        "played_at": "2026-11-19T21:33:49.935Z"
     },
-    "updated_at": "2026-11-19T17:44:11.114Z"
+    "updated_at": "2026-11-19T23:55:01.470Z"
 }
