@@ -1,14 +1,13 @@
 {
     "track": {
-        "title": "AMENA",
+        "title": "Mischkonsum",
         "artists": [
-            "Ikkimel",
-            "Barré"
+            "Dosenstolz"
         ],
-        "album": "FOTZE",
-        "image": "https://i.scdn.co/image/ab67616d00001e0206517cb22fa208e202e32953",
-        "url": "https://open.spotify.com/track/6wPupZx0WFmkj9wnCrCUJU",
-        "played_at": "2026-11-21T18:14:15.968Z"
+        "album": "Die schönsten Lieder",
+        "image": "https://i.scdn.co/image/ab67616d00001e025554835f4ee06bbe93e0df4e",
+        "url": "https://open.spotify.com/track/6wHJDjaVAdql4NfTepyDNO",
+        "played_at": "2026-11-21T23:27:30.862Z"
     },
-    "updated_at": "2026-11-21T18:14:23.695Z"
+    "updated_at": "2026-11-21T23:28:27.596Z"
 }
