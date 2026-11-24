@@ -1,13 +1,14 @@
 {
     "track": {
-        "title": "Betty Boop",
+        "title": "Alles Taugt Nichts",
         "artists": [
-            "Julie"
+            "Julie",
+            "Pablo Rochat"
         ],
-        "album": "Betty Boop",
-        "image": "https://i.scdn.co/image/ab67616d00001e02da71416524b15030161a5585",
-        "url": "https://open.spotify.com/track/30ZM7FUXw9iHvUfvRwTQWQ",
-        "played_at": "2026-11-23T18:14:06.395Z"
+        "album": "Alles Taugt nichts",
+        "image": "https://i.scdn.co/image/ab67616d00001e027ad6b82a62450b596ce7cce3",
+        "url": "https://open.spotify.com/track/03vbbI64syEGj2Q3e2Ytbg",
+        "played_at": "2026-11-24T02:11:38.530Z"
     },
-    "updated_at": "2026-11-23T20:11:47.138Z"
+    "updated_at": "2026-11-24T04:48:53.630Z"
 }
