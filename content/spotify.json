@@ -1,13 +1,14 @@
 {
     "track": {
-        "title": "Morgenrot",
+        "title": "Für die Hoffenden",
         "artists": [
-            "Julie"
+            "Motuz",
+            "DeeLou"
         ],
-        "album": "Morgenrot",
-        "image": "https://i.scdn.co/image/ab67616d00001e02d92840c57bb3ef21228eeabe",
-        "url": "https://open.spotify.com/track/6DoLHIeAIwT5c8crTRut4p",
-        "played_at": "2026-11-27T11:21:50.345Z"
+        "album": "Für die Hoffenden",
+        "image": "https://i.scdn.co/image/ab67616d00001e024c9fb92611ff0f0f71ff070e",
+        "url": "https://open.spotify.com/track/1Y4jIFDL9PxkJyozwRpLL4",
+        "played_at": "2026-11-27T17:17:49.240Z"
     },
-    "updated_at": "2026-11-27T11:25:17.175Z"
+    "updated_at": "2026-11-27T20:14:13.238Z"
 }
